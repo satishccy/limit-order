@@ -1,0 +1,93 @@
+{
+  "name": "LimitOrder",
+  "desc": "",
+  "methods": [
+    {
+      "name": "createApplication",
+      "args": [],
+      "returns": {
+        "type": "void"
+      }
+    },
+    {
+      "name": "createOrder",
+      "args": [
+        {
+          "name": "assetSendTxn",
+          "type": "txn"
+        },
+        {
+          "name": "mbrTxn",
+          "type": "pay"
+        },
+        {
+          "name": "takingAsset",
+          "type": "uint64"
+        },
+        {
+          "name": "takingAmount",
+          "type": "uint64"
+        }
+      ],
+      "returns": {
+        "type": "uint64"
+      }
+    },
+    {
+      "name": "claimOrder",
+      "args": [
+        {
+          "name": "orderId",
+          "type": "uint64"
+        },
+        {
+          "name": "assetSendTxn",
+          "type": "txn"
+        }
+      ],
+      "returns": {
+        "type": "void"
+      }
+    },
+    {
+      "name": "claimOwnerAsset",
+      "args": [
+        {
+          "name": "orderId",
+          "type": "uint64"
+        }
+      ],
+      "returns": {
+        "type": "void"
+      }
+    },
+    {
+      "name": "optInToAsset",
+      "args": [
+        {
+          "name": "assetId",
+          "type": "uint64"
+        },
+        {
+          "name": "mbrTxn",
+          "type": "pay"
+        }
+      ],
+      "returns": {
+        "type": "void"
+      }
+    },
+    {
+      "name": "cancelOrder",
+      "args": [
+        {
+          "name": "orderId",
+          "type": "uint64"
+        }
+      ],
+      "returns": {
+        "type": "void"
+      }
+    }
+  ]
+}

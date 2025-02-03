@@ -1,0 +1,5350 @@
+[
+  {
+    "teal": 1,
+    "source": "contracts\\LimitOrder.algo.ts:16",
+    "pc": [
+      0
+    ]
+  },
+  {
+    "teal": 2,
+    "source": "contracts\\LimitOrder.algo.ts:16",
+    "pc": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ]
+  },
+  {
+    "teal": 3,
+    "source": "contracts\\LimitOrder.algo.ts:16",
+    "pc": [
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28
+    ]
+  },
+  {
+    "teal": 15,
+    "source": "contracts\\LimitOrder.algo.ts:16",
+    "pc": [
+      29,
+      30
+    ]
+  },
+  {
+    "teal": 16,
+    "source": "contracts\\LimitOrder.algo.ts:16",
+    "pc": [
+      31
+    ]
+  },
+  {
+    "teal": 17,
+    "source": "contracts\\LimitOrder.algo.ts:16",
+    "pc": [
+      32,
+      33
+    ]
+  },
+  {
+    "teal": 18,
+    "source": "contracts\\LimitOrder.algo.ts:16",
+    "pc": [
+      34
+    ]
+  },
+  {
+    "teal": 19,
+    "source": "contracts\\LimitOrder.algo.ts:16",
+    "pc": [
+      35,
+      36
+    ]
+  },
+  {
+    "teal": 20,
+    "source": "contracts\\LimitOrder.algo.ts:16",
+    "pc": [
+      37
+    ]
+  },
+  {
+    "teal": 21,
+    "source": "contracts\\LimitOrder.algo.ts:16",
+    "pc": [
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63
+    ]
+  },
+  {
+    "teal": 25,
+    "source": "contracts\\LimitOrder.algo.ts:16",
+    "errorMessage": "The requested action is not implemented in this contract. Are you using the correct OnComplete? Did you set your app ID?",
+    "pc": [
+      64
+    ]
+  },
+  {
+    "teal": 30,
+    "source": "contracts\\LimitOrder.algo.ts:21",
+    "pc": [
+      65,
+      66,
+      67
+    ]
+  },
+  {
+    "teal": 31,
+    "source": "contracts\\LimitOrder.algo.ts:21",
+    "pc": [
+      68
+    ]
+  },
+  {
+    "teal": 32,
+    "source": "contracts\\LimitOrder.algo.ts:21",
+    "pc": [
+      69
+    ]
+  },
+  {
+    "teal": 36,
+    "source": "contracts\\LimitOrder.algo.ts:21",
+    "pc": [
+      70,
+      71,
+      72
+    ]
+  },
+  {
+    "teal": 40,
+    "source": "contracts\\LimitOrder.algo.ts:22",
+    "pc": [
+      73
+    ]
+  },
+  {
+    "teal": 41,
+    "source": "contracts\\LimitOrder.algo.ts:22",
+    "pc": [
+      74
+    ]
+  },
+  {
+    "teal": 42,
+    "source": "contracts\\LimitOrder.algo.ts:22",
+    "pc": [
+      75
+    ]
+  },
+  {
+    "teal": 43,
+    "source": "contracts\\LimitOrder.algo.ts:21",
+    "pc": [
+      76
+    ]
+  },
+  {
+    "teal": 48,
+    "source": "contracts\\LimitOrder.algo.ts:25",
+    "pc": [
+      77,
+      78,
+      79,
+      80,
+      81,
+      82
+    ]
+  },
+  {
+    "teal": 51,
+    "source": "contracts\\LimitOrder.algo.ts:25",
+    "pc": [
+      83,
+      84,
+      85
+    ]
+  },
+  {
+    "teal": 52,
+    "source": "contracts\\LimitOrder.algo.ts:25",
+    "pc": [
+      86
+    ]
+  },
+  {
+    "teal": 55,
+    "source": "contracts\\LimitOrder.algo.ts:25",
+    "pc": [
+      87,
+      88,
+      89
+    ]
+  },
+  {
+    "teal": 56,
+    "source": "contracts\\LimitOrder.algo.ts:25",
+    "pc": [
+      90
+    ]
+  },
+  {
+    "teal": 59,
+    "source": "contracts\\LimitOrder.algo.ts:25",
+    "pc": [
+      91,
+      92
+    ]
+  },
+  {
+    "teal": 60,
+    "source": "contracts\\LimitOrder.algo.ts:25",
+    "pc": [
+      93
+    ]
+  },
+  {
+    "teal": 61,
+    "source": "contracts\\LimitOrder.algo.ts:25",
+    "pc": [
+      94
+    ]
+  },
+  {
+    "teal": 62,
+    "source": "contracts\\LimitOrder.algo.ts:25",
+    "pc": [
+      95
+    ]
+  },
+  {
+    "teal": 63,
+    "source": "contracts\\LimitOrder.algo.ts:25",
+    "pc": [
+      96,
+      97
+    ]
+  },
+  {
+    "teal": 64,
+    "source": "contracts\\LimitOrder.algo.ts:25",
+    "pc": [
+      98
+    ]
+  },
+  {
+    "teal": 65,
+    "source": "contracts\\LimitOrder.algo.ts:25",
+    "pc": [
+      99
+    ]
+  },
+  {
+    "teal": 68,
+    "source": "contracts\\LimitOrder.algo.ts:25",
+    "errorMessage": "argument 2 (mbrTxn) for createOrder must be a pay transaction",
+    "pc": [
+      100
+    ]
+  },
+  {
+    "teal": 71,
+    "source": "contracts\\LimitOrder.algo.ts:25",
+    "pc": [
+      101,
+      102
+    ]
+  },
+  {
+    "teal": 72,
+    "source": "contracts\\LimitOrder.algo.ts:25",
+    "pc": [
+      103,
+      104
+    ]
+  },
+  {
+    "teal": 73,
+    "source": "contracts\\LimitOrder.algo.ts:25",
+    "pc": [
+      105
+    ]
+  },
+  {
+    "teal": 76,
+    "source": "contracts\\LimitOrder.algo.ts:25",
+    "pc": [
+      106,
+      107,
+      108
+    ]
+  },
+  {
+    "teal": 77,
+    "source": "contracts\\LimitOrder.algo.ts:25",
+    "pc": [
+      109
+    ]
+  },
+  {
+    "teal": 78,
+    "source": "contracts\\LimitOrder.algo.ts:25",
+    "pc": [
+      110
+    ]
+  },
+  {
+    "teal": 79,
+    "source": "contracts\\LimitOrder.algo.ts:25",
+    "pc": [
+      111
+    ]
+  },
+  {
+    "teal": 80,
+    "source": "contracts\\LimitOrder.algo.ts:25",
+    "pc": [
+      112
+    ]
+  },
+  {
+    "teal": 81,
+    "source": "contracts\\LimitOrder.algo.ts:25",
+    "pc": [
+      113
+    ]
+  },
+  {
+    "teal": 85,
+    "source": "contracts\\LimitOrder.algo.ts:25",
+    "pc": [
+      114,
+      115,
+      116
+    ]
+  },
+  {
+    "teal": 88,
+    "source": "contracts\\LimitOrder.algo.ts:25",
+    "pc": [
+      117
+    ]
+  },
+  {
+    "teal": 92,
+    "source": "contracts\\LimitOrder.algo.ts:26",
+    "pc": [
+      118,
+      119
+    ]
+  },
+  {
+    "teal": 93,
+    "source": "contracts\\LimitOrder.algo.ts:26",
+    "pc": [
+      120,
+      121
+    ]
+  },
+  {
+    "teal": 94,
+    "source": "contracts\\LimitOrder.algo.ts:26",
+    "pc": [
+      122,
+      123
+    ]
+  },
+  {
+    "teal": 95,
+    "source": "contracts\\LimitOrder.algo.ts:26",
+    "pc": [
+      124
+    ]
+  },
+  {
+    "teal": 96,
+    "source": "contracts\\LimitOrder.algo.ts:26",
+    "pc": [
+      125
+    ]
+  },
+  {
+    "teal": 99,
+    "source": "contracts\\LimitOrder.algo.ts:26",
+    "errorMessage": "Taking asset is not opted in",
+    "pc": [
+      126
+    ]
+  },
+  {
+    "teal": 103,
+    "source": "contracts\\LimitOrder.algo.ts:27",
+    "pc": [
+      127,
+      128
+    ]
+  },
+  {
+    "teal": 104,
+    "source": "contracts\\LimitOrder.algo.ts:27",
+    "pc": [
+      129,
+      130
+    ]
+  },
+  {
+    "teal": 105,
+    "source": "contracts\\LimitOrder.algo.ts:27",
+    "pc": [
+      131,
+      132
+    ]
+  },
+  {
+    "teal": 106,
+    "source": "contracts\\LimitOrder.algo.ts:27",
+    "pc": [
+      133
+    ]
+  },
+  {
+    "teal": 109,
+    "source": "contracts\\LimitOrder.algo.ts:27",
+    "errorMessage": "Invalid sender",
+    "pc": [
+      134
+    ]
+  },
+  {
+    "teal": 113,
+    "source": "contracts\\LimitOrder.algo.ts:28",
+    "pc": [
+      135,
+      136
+    ]
+  },
+  {
+    "teal": 114,
+    "source": "contracts\\LimitOrder.algo.ts:28",
+    "pc": [
+      137,
+      138
+    ]
+  },
+  {
+    "teal": 115,
+    "source": "contracts\\LimitOrder.algo.ts:28",
+    "pc": [
+      139,
+      140
+    ]
+  },
+  {
+    "teal": 116,
+    "source": "contracts\\LimitOrder.algo.ts:28",
+    "pc": [
+      141,
+      142,
+      143
+    ]
+  },
+  {
+    "teal": 117,
+    "source": "contracts\\LimitOrder.algo.ts:28",
+    "pc": [
+      144,
+      145
+    ]
+  },
+  {
+    "teal": 122,
+    "source": "contracts\\LimitOrder.algo.ts:29",
+    "pc": [
+      146,
+      147
+    ]
+  },
+  {
+    "teal": 123,
+    "source": "contracts\\LimitOrder.algo.ts:29",
+    "pc": [
+      148,
+      149
+    ]
+  },
+  {
+    "teal": 124,
+    "source": "contracts\\LimitOrder.algo.ts:29",
+    "pc": [
+      150,
+      151
+    ]
+  },
+  {
+    "teal": 125,
+    "source": "contracts\\LimitOrder.algo.ts:29",
+    "pc": [
+      152
+    ]
+  },
+  {
+    "teal": 128,
+    "source": "contracts\\LimitOrder.algo.ts:29",
+    "errorMessage": "transaction verification failed: {\"txn\":\"mbrTxn\",\"field\":\"amount\",\"condition\":\"greaterThanEqualTo\",\"expected\":\">=BOX_MBR\"}",
+    "pc": [
+      153
+    ]
+  },
+  {
+    "teal": 132,
+    "source": "contracts\\LimitOrder.algo.ts:30",
+    "pc": [
+      154
+    ]
+  },
+  {
+    "teal": 133,
+    "source": "contracts\\LimitOrder.algo.ts:30",
+    "pc": [
+      155
+    ]
+  },
+  {
+    "teal": 134,
+    "source": "contracts\\LimitOrder.algo.ts:30",
+    "pc": [
+      156
+    ]
+  },
+  {
+    "teal": 135,
+    "source": "contracts\\LimitOrder.algo.ts:30",
+    "pc": [
+      157,
+      158
+    ]
+  },
+  {
+    "teal": 136,
+    "source": "contracts\\LimitOrder.algo.ts:30",
+    "pc": [
+      159
+    ]
+  },
+  {
+    "teal": 140,
+    "source": "contracts\\LimitOrder.algo.ts:31",
+    "pc": [
+      160
+    ]
+  },
+  {
+    "teal": 141,
+    "source": "contracts\\LimitOrder.algo.ts:31",
+    "pc": [
+      161
+    ]
+  },
+  {
+    "teal": 142,
+    "source": "contracts\\LimitOrder.algo.ts:31",
+    "pc": [
+      162
+    ]
+  },
+  {
+    "teal": 143,
+    "source": "contracts\\LimitOrder.algo.ts:31",
+    "pc": [
+      163
+    ]
+  },
+  {
+    "teal": 144,
+    "source": "contracts\\LimitOrder.algo.ts:31",
+    "pc": [
+      164
+    ]
+  },
+  {
+    "teal": 145,
+    "source": "contracts\\LimitOrder.algo.ts:31",
+    "pc": [
+      165
+    ]
+  },
+  {
+    "teal": 146,
+    "source": "contracts\\LimitOrder.algo.ts:31",
+    "pc": [
+      166
+    ]
+  },
+  {
+    "teal": 150,
+    "source": "contracts\\LimitOrder.algo.ts:32",
+    "pc": [
+      167,
+      168
+    ]
+  },
+  {
+    "teal": 151,
+    "source": "contracts\\LimitOrder.algo.ts:32",
+    "pc": [
+      169,
+      170
+    ]
+  },
+  {
+    "teal": 152,
+    "source": "contracts\\LimitOrder.algo.ts:32",
+    "pc": [
+      171,
+      172
+    ]
+  },
+  {
+    "teal": 153,
+    "source": "contracts\\LimitOrder.algo.ts:32",
+    "pc": [
+      173,
+      174,
+      175
+    ]
+  },
+  {
+    "teal": 154,
+    "source": "contracts\\LimitOrder.algo.ts:32",
+    "pc": [
+      176
+    ]
+  },
+  {
+    "teal": 157,
+    "source": "contracts\\LimitOrder.algo.ts:25",
+    "pc": [
+      177,
+      178
+    ]
+  },
+  {
+    "teal": 158,
+    "source": "contracts\\LimitOrder.algo.ts:25",
+    "pc": [
+      179
+    ]
+  },
+  {
+    "teal": 162,
+    "source": "contracts\\LimitOrder.algo.ts:35",
+    "pc": [
+      180,
+      181,
+      182
+    ]
+  },
+  {
+    "teal": 169,
+    "source": "contracts\\LimitOrder.algo.ts:37",
+    "pc": [
+      183,
+      184
+    ]
+  },
+  {
+    "teal": 170,
+    "source": "contracts\\LimitOrder.algo.ts:37",
+    "pc": [
+      185,
+      186
+    ]
+  },
+  {
+    "teal": 171,
+    "source": "contracts\\LimitOrder.algo.ts:37",
+    "pc": [
+      187
+    ]
+  },
+  {
+    "teal": 172,
+    "source": "contracts\\LimitOrder.algo.ts:37",
+    "pc": [
+      188
+    ]
+  },
+  {
+    "teal": 173,
+    "source": "contracts\\LimitOrder.algo.ts:37",
+    "pc": [
+      189
+    ]
+  },
+  {
+    "teal": 174,
+    "source": "contracts\\LimitOrder.algo.ts:37",
+    "pc": [
+      190,
+      191,
+      192
+    ]
+  },
+  {
+    "teal": 175,
+    "source": "contracts\\LimitOrder.algo.ts:37",
+    "pc": [
+      193,
+      194
+    ]
+  },
+  {
+    "teal": 176,
+    "source": "contracts\\LimitOrder.algo.ts:37",
+    "pc": [
+      195,
+      196
+    ]
+  },
+  {
+    "teal": 177,
+    "source": "contracts\\LimitOrder.algo.ts:37",
+    "pc": [
+      197
+    ]
+  },
+  {
+    "teal": 178,
+    "source": "contracts\\LimitOrder.algo.ts:37",
+    "pc": [
+      198
+    ]
+  },
+  {
+    "teal": 179,
+    "source": "contracts\\LimitOrder.algo.ts:37",
+    "pc": [
+      199
+    ]
+  },
+  {
+    "teal": 183,
+    "source": "contracts\\LimitOrder.algo.ts:36",
+    "errorMessage": "Invalid transaction type",
+    "pc": [
+      200
+    ]
+  },
+  {
+    "teal": 188,
+    "source": "contracts\\LimitOrder.algo.ts:40",
+    "pc": [
+      201,
+      202
+    ]
+  },
+  {
+    "teal": 189,
+    "source": "contracts\\LimitOrder.algo.ts:40",
+    "pc": [
+      203,
+      204
+    ]
+  },
+  {
+    "teal": 190,
+    "source": "contracts\\LimitOrder.algo.ts:40",
+    "pc": [
+      205
+    ]
+  },
+  {
+    "teal": 191,
+    "source": "contracts\\LimitOrder.algo.ts:40",
+    "pc": [
+      206
+    ]
+  },
+  {
+    "teal": 192,
+    "source": "contracts\\LimitOrder.algo.ts:40",
+    "pc": [
+      207,
+      208,
+      209
+    ]
+  },
+  {
+    "teal": 197,
+    "source": "contracts\\LimitOrder.algo.ts:41",
+    "pc": [
+      210,
+      211
+    ]
+  },
+  {
+    "teal": 198,
+    "source": "contracts\\LimitOrder.algo.ts:41",
+    "pc": [
+      212,
+      213
+    ]
+  },
+  {
+    "teal": 199,
+    "source": "contracts\\LimitOrder.algo.ts:41",
+    "pc": [
+      214,
+      215
+    ]
+  },
+  {
+    "teal": 200,
+    "source": "contracts\\LimitOrder.algo.ts:41",
+    "pc": [
+      216
+    ]
+  },
+  {
+    "teal": 203,
+    "source": "contracts\\LimitOrder.algo.ts:41",
+    "errorMessage": "Invalid receiver",
+    "pc": [
+      217
+    ]
+  },
+  {
+    "teal": 216,
+    "source": "contracts\\LimitOrder.algo.ts:43",
+    "pc": [
+      218
+    ]
+  },
+  {
+    "teal": 217,
+    "source": "contracts\\LimitOrder.algo.ts:43",
+    "pc": [
+      219
+    ]
+  },
+  {
+    "teal": 218,
+    "source": "contracts\\LimitOrder.algo.ts:43",
+    "pc": [
+      220
+    ]
+  },
+  {
+    "teal": 219,
+    "source": "contracts\\LimitOrder.algo.ts:44",
+    "pc": [
+      221,
+      222
+    ]
+  },
+  {
+    "teal": 220,
+    "source": "contracts\\LimitOrder.algo.ts:44",
+    "pc": [
+      223
+    ]
+  },
+  {
+    "teal": 221,
+    "source": "contracts\\LimitOrder.algo.ts:45",
+    "pc": [
+      224,
+      225,
+      226,
+      227,
+      228,
+      229,
+      230,
+      231,
+      232,
+      233
+    ]
+  },
+  {
+    "teal": 222,
+    "source": "contracts\\LimitOrder.algo.ts:45",
+    "pc": [
+      234
+    ]
+  },
+  {
+    "teal": 223,
+    "source": "contracts\\LimitOrder.algo.ts:46",
+    "pc": [
+      235,
+      236
+    ]
+  },
+  {
+    "teal": 224,
+    "source": "contracts\\LimitOrder.algo.ts:46",
+    "pc": [
+      237
+    ]
+  },
+  {
+    "teal": 225,
+    "source": "contracts\\LimitOrder.algo.ts:46",
+    "pc": [
+      238
+    ]
+  },
+  {
+    "teal": 226,
+    "source": "contracts\\LimitOrder.algo.ts:47",
+    "pc": [
+      239,
+      240
+    ]
+  },
+  {
+    "teal": 227,
+    "source": "contracts\\LimitOrder.algo.ts:47",
+    "pc": [
+      241,
+      242
+    ]
+  },
+  {
+    "teal": 228,
+    "source": "contracts\\LimitOrder.algo.ts:47",
+    "pc": [
+      243
+    ]
+  },
+  {
+    "teal": 229,
+    "source": "contracts\\LimitOrder.algo.ts:47",
+    "pc": [
+      244
+    ]
+  },
+  {
+    "teal": 230,
+    "source": "contracts\\LimitOrder.algo.ts:48",
+    "pc": [
+      245,
+      246
+    ]
+  },
+  {
+    "teal": 231,
+    "source": "contracts\\LimitOrder.algo.ts:48",
+    "pc": [
+      247
+    ]
+  },
+  {
+    "teal": 232,
+    "source": "contracts\\LimitOrder.algo.ts:48",
+    "pc": [
+      248
+    ]
+  },
+  {
+    "teal": 233,
+    "source": "contracts\\LimitOrder.algo.ts:49",
+    "pc": [
+      249
+    ]
+  },
+  {
+    "teal": 234,
+    "source": "contracts\\LimitOrder.algo.ts:49",
+    "pc": [
+      250
+    ]
+  },
+  {
+    "teal": 235,
+    "source": "contracts\\LimitOrder.algo.ts:49",
+    "pc": [
+      251
+    ]
+  },
+  {
+    "teal": 236,
+    "source": "contracts\\LimitOrder.algo.ts:49",
+    "pc": [
+      252
+    ]
+  },
+  {
+    "teal": 237,
+    "source": "contracts\\LimitOrder.algo.ts:50",
+    "pc": [
+      253
+    ]
+  },
+  {
+    "teal": 238,
+    "source": "contracts\\LimitOrder.algo.ts:50",
+    "pc": [
+      254
+    ]
+  },
+  {
+    "teal": 239,
+    "source": "contracts\\LimitOrder.algo.ts:50",
+    "pc": [
+      255
+    ]
+  },
+  {
+    "teal": 240,
+    "source": "contracts\\LimitOrder.algo.ts:42",
+    "pc": [
+      256
+    ]
+  },
+  {
+    "teal": 241,
+    "source": "contracts\\LimitOrder.algo.ts:42",
+    "pc": [
+      257
+    ]
+  },
+  {
+    "teal": 246,
+    "source": "contracts\\LimitOrder.algo.ts:53",
+    "pc": [
+      258,
+      259
+    ]
+  },
+  {
+    "teal": 247,
+    "source": "contracts\\LimitOrder.algo.ts:53",
+    "pc": [
+      260,
+      261
+    ]
+  },
+  {
+    "teal": 248,
+    "source": "contracts\\LimitOrder.algo.ts:53",
+    "pc": [
+      262,
+      263
+    ]
+  },
+  {
+    "teal": 249,
+    "source": "contracts\\LimitOrder.algo.ts:53",
+    "pc": [
+      264
+    ]
+  },
+  {
+    "teal": 252,
+    "source": "contracts\\LimitOrder.algo.ts:53",
+    "errorMessage": "Invalid receiver",
+    "pc": [
+      265
+    ]
+  },
+  {
+    "teal": 265,
+    "source": "contracts\\LimitOrder.algo.ts:55",
+    "pc": [
+      266
+    ]
+  },
+  {
+    "teal": 266,
+    "source": "contracts\\LimitOrder.algo.ts:55",
+    "pc": [
+      267
+    ]
+  },
+  {
+    "teal": 267,
+    "source": "contracts\\LimitOrder.algo.ts:55",
+    "pc": [
+      268
+    ]
+  },
+  {
+    "teal": 268,
+    "source": "contracts\\LimitOrder.algo.ts:56",
+    "pc": [
+      269,
+      270
+    ]
+  },
+  {
+    "teal": 269,
+    "source": "contracts\\LimitOrder.algo.ts:56",
+    "pc": [
+      271
+    ]
+  },
+  {
+    "teal": 270,
+    "source": "contracts\\LimitOrder.algo.ts:57",
+    "pc": [
+      272,
+      273
+    ]
+  },
+  {
+    "teal": 271,
+    "source": "contracts\\LimitOrder.algo.ts:57",
+    "pc": [
+      274,
+      275
+    ]
+  },
+  {
+    "teal": 272,
+    "source": "contracts\\LimitOrder.algo.ts:57",
+    "pc": [
+      276
+    ]
+  },
+  {
+    "teal": 273,
+    "source": "contracts\\LimitOrder.algo.ts:57",
+    "pc": [
+      277
+    ]
+  },
+  {
+    "teal": 274,
+    "source": "contracts\\LimitOrder.algo.ts:58",
+    "pc": [
+      278,
+      279
+    ]
+  },
+  {
+    "teal": 275,
+    "source": "contracts\\LimitOrder.algo.ts:58",
+    "pc": [
+      280
+    ]
+  },
+  {
+    "teal": 276,
+    "source": "contracts\\LimitOrder.algo.ts:58",
+    "pc": [
+      281
+    ]
+  },
+  {
+    "teal": 277,
+    "source": "contracts\\LimitOrder.algo.ts:59",
+    "pc": [
+      282,
+      283
+    ]
+  },
+  {
+    "teal": 278,
+    "source": "contracts\\LimitOrder.algo.ts:59",
+    "pc": [
+      284,
+      285
+    ]
+  },
+  {
+    "teal": 279,
+    "source": "contracts\\LimitOrder.algo.ts:59",
+    "pc": [
+      286
+    ]
+  },
+  {
+    "teal": 280,
+    "source": "contracts\\LimitOrder.algo.ts:59",
+    "pc": [
+      287
+    ]
+  },
+  {
+    "teal": 281,
+    "source": "contracts\\LimitOrder.algo.ts:60",
+    "pc": [
+      288,
+      289
+    ]
+  },
+  {
+    "teal": 282,
+    "source": "contracts\\LimitOrder.algo.ts:60",
+    "pc": [
+      290
+    ]
+  },
+  {
+    "teal": 283,
+    "source": "contracts\\LimitOrder.algo.ts:60",
+    "pc": [
+      291
+    ]
+  },
+  {
+    "teal": 284,
+    "source": "contracts\\LimitOrder.algo.ts:61",
+    "pc": [
+      292
+    ]
+  },
+  {
+    "teal": 285,
+    "source": "contracts\\LimitOrder.algo.ts:61",
+    "pc": [
+      293
+    ]
+  },
+  {
+    "teal": 286,
+    "source": "contracts\\LimitOrder.algo.ts:61",
+    "pc": [
+      294
+    ]
+  },
+  {
+    "teal": 287,
+    "source": "contracts\\LimitOrder.algo.ts:61",
+    "pc": [
+      295
+    ]
+  },
+  {
+    "teal": 288,
+    "source": "contracts\\LimitOrder.algo.ts:62",
+    "pc": [
+      296
+    ]
+  },
+  {
+    "teal": 289,
+    "source": "contracts\\LimitOrder.algo.ts:62",
+    "pc": [
+      297
+    ]
+  },
+  {
+    "teal": 290,
+    "source": "contracts\\LimitOrder.algo.ts:62",
+    "pc": [
+      298
+    ]
+  },
+  {
+    "teal": 291,
+    "source": "contracts\\LimitOrder.algo.ts:54",
+    "pc": [
+      299
+    ]
+  },
+  {
+    "teal": 292,
+    "source": "contracts\\LimitOrder.algo.ts:35",
+    "pc": [
+      300
+    ]
+  },
+  {
+    "teal": 297,
+    "source": "contracts\\LimitOrder.algo.ts:66",
+    "pc": [
+      301,
+      302
+    ]
+  },
+  {
+    "teal": 298,
+    "source": "contracts\\LimitOrder.algo.ts:66",
+    "pc": [
+      303
+    ]
+  },
+  {
+    "teal": 299,
+    "source": "contracts\\LimitOrder.algo.ts:66",
+    "pc": [
+      304
+    ]
+  },
+  {
+    "teal": 302,
+    "source": "contracts\\LimitOrder.algo.ts:66",
+    "pc": [
+      305,
+      306,
+      307
+    ]
+  },
+  {
+    "teal": 303,
+    "source": "contracts\\LimitOrder.algo.ts:66",
+    "pc": [
+      308
+    ]
+  },
+  {
+    "teal": 306,
+    "source": "contracts\\LimitOrder.algo.ts:66",
+    "pc": [
+      309,
+      310,
+      311
+    ]
+  },
+  {
+    "teal": 307,
+    "source": "contracts\\LimitOrder.algo.ts:66",
+    "pc": [
+      312
+    ]
+  },
+  {
+    "teal": 308,
+    "source": "contracts\\LimitOrder.algo.ts:66",
+    "pc": [
+      313
+    ]
+  },
+  {
+    "teal": 312,
+    "source": "contracts\\LimitOrder.algo.ts:66",
+    "pc": [
+      314,
+      315,
+      316
+    ]
+  },
+  {
+    "teal": 315,
+    "source": "contracts\\LimitOrder.algo.ts:66",
+    "pc": [
+      317
+    ]
+  },
+  {
+    "teal": 316,
+    "source": "contracts\\LimitOrder.algo.ts:66",
+    "pc": [
+      318
+    ]
+  },
+  {
+    "teal": 320,
+    "source": "contracts\\LimitOrder.algo.ts:67",
+    "pc": [
+      319,
+      320
+    ]
+  },
+  {
+    "teal": 321,
+    "source": "contracts\\LimitOrder.algo.ts:67",
+    "pc": [
+      321
+    ]
+  },
+  {
+    "teal": 322,
+    "source": "contracts\\LimitOrder.algo.ts:67",
+    "pc": [
+      322
+    ]
+  },
+  {
+    "teal": 323,
+    "source": "contracts\\LimitOrder.algo.ts:67",
+    "pc": [
+      323
+    ]
+  },
+  {
+    "teal": 324,
+    "source": "contracts\\LimitOrder.algo.ts:67",
+    "pc": [
+      324
+    ]
+  },
+  {
+    "teal": 327,
+    "source": "contracts\\LimitOrder.algo.ts:67",
+    "errorMessage": "Order not found",
+    "pc": [
+      325
+    ]
+  },
+  {
+    "teal": 331,
+    "source": "contracts\\LimitOrder.algo.ts:68",
+    "pc": [
+      326,
+      327
+    ]
+  },
+  {
+    "teal": 332,
+    "source": "contracts\\LimitOrder.algo.ts:68",
+    "pc": [
+      328
+    ]
+  },
+  {
+    "teal": 333,
+    "source": "contracts\\LimitOrder.algo.ts:68",
+    "pc": [
+      329,
+      330
+    ]
+  },
+  {
+    "teal": 337,
+    "source": "contracts\\LimitOrder.algo.ts:68",
+    "pc": [
+      331,
+      332
+    ]
+  },
+  {
+    "teal": 338,
+    "source": "contracts\\LimitOrder.algo.ts:68",
+    "pc": [
+      333
+    ]
+  },
+  {
+    "teal": 341,
+    "source": "contracts\\LimitOrder.algo.ts:68",
+    "errorMessage": "box value does not exist: this.orders(orderId).value",
+    "pc": [
+      334
+    ]
+  },
+  {
+    "teal": 342,
+    "source": "contracts\\LimitOrder.algo.ts:69",
+    "pc": [
+      335,
+      336
+    ]
+  },
+  {
+    "teal": 343,
+    "source": "contracts\\LimitOrder.algo.ts:69",
+    "pc": [
+      337,
+      338
+    ]
+  },
+  {
+    "teal": 344,
+    "source": "contracts\\LimitOrder.algo.ts:69",
+    "pc": [
+      339
+    ]
+  },
+  {
+    "teal": 345,
+    "source": "contracts\\LimitOrder.algo.ts:69",
+    "pc": [
+      340
+    ]
+  },
+  {
+    "teal": 346,
+    "source": "contracts\\LimitOrder.algo.ts:69",
+    "pc": [
+      341
+    ]
+  },
+  {
+    "teal": 349,
+    "source": "contracts\\LimitOrder.algo.ts:69",
+    "errorMessage": "Order already completed",
+    "pc": [
+      342
+    ]
+  },
+  {
+    "teal": 356,
+    "source": "contracts\\LimitOrder.algo.ts:71",
+    "pc": [
+      343,
+      344
+    ]
+  },
+  {
+    "teal": 357,
+    "source": "contracts\\LimitOrder.algo.ts:71",
+    "pc": [
+      345,
+      346
+    ]
+  },
+  {
+    "teal": 358,
+    "source": "contracts\\LimitOrder.algo.ts:71",
+    "pc": [
+      347
+    ]
+  },
+  {
+    "teal": 359,
+    "source": "contracts\\LimitOrder.algo.ts:71",
+    "pc": [
+      348
+    ]
+  },
+  {
+    "teal": 360,
+    "source": "contracts\\LimitOrder.algo.ts:71",
+    "pc": [
+      349
+    ]
+  },
+  {
+    "teal": 361,
+    "source": "contracts\\LimitOrder.algo.ts:71",
+    "pc": [
+      350,
+      351,
+      352
+    ]
+  },
+  {
+    "teal": 362,
+    "source": "contracts\\LimitOrder.algo.ts:71",
+    "pc": [
+      353,
+      354
+    ]
+  },
+  {
+    "teal": 363,
+    "source": "contracts\\LimitOrder.algo.ts:71",
+    "pc": [
+      355,
+      356
+    ]
+  },
+  {
+    "teal": 364,
+    "source": "contracts\\LimitOrder.algo.ts:71",
+    "pc": [
+      357
+    ]
+  },
+  {
+    "teal": 365,
+    "source": "contracts\\LimitOrder.algo.ts:71",
+    "pc": [
+      358
+    ]
+  },
+  {
+    "teal": 366,
+    "source": "contracts\\LimitOrder.algo.ts:71",
+    "pc": [
+      359
+    ]
+  },
+  {
+    "teal": 370,
+    "source": "contracts\\LimitOrder.algo.ts:70",
+    "errorMessage": "Invalid transaction type",
+    "pc": [
+      360
+    ]
+  },
+  {
+    "teal": 375,
+    "source": "contracts\\LimitOrder.algo.ts:74",
+    "pc": [
+      361,
+      362
+    ]
+  },
+  {
+    "teal": 376,
+    "source": "contracts\\LimitOrder.algo.ts:74",
+    "pc": [
+      363,
+      364
+    ]
+  },
+  {
+    "teal": 377,
+    "source": "contracts\\LimitOrder.algo.ts:74",
+    "pc": [
+      365
+    ]
+  },
+  {
+    "teal": 378,
+    "source": "contracts\\LimitOrder.algo.ts:74",
+    "pc": [
+      366
+    ]
+  },
+  {
+    "teal": 379,
+    "source": "contracts\\LimitOrder.algo.ts:74",
+    "pc": [
+      367,
+      368,
+      369
+    ]
+  },
+  {
+    "teal": 384,
+    "source": "contracts\\LimitOrder.algo.ts:68",
+    "pc": [
+      370,
+      371
+    ]
+  },
+  {
+    "teal": 385,
+    "source": "contracts\\LimitOrder.algo.ts:68",
+    "pc": [
+      372
+    ]
+  },
+  {
+    "teal": 388,
+    "source": "contracts\\LimitOrder.algo.ts:68",
+    "errorMessage": "box value does not exist: this.orders(orderId).value",
+    "pc": [
+      373
+    ]
+  },
+  {
+    "teal": 389,
+    "source": "contracts\\LimitOrder.algo.ts:75",
+    "pc": [
+      374,
+      375
+    ]
+  },
+  {
+    "teal": 390,
+    "source": "contracts\\LimitOrder.algo.ts:75",
+    "pc": [
+      376,
+      377
+    ]
+  },
+  {
+    "teal": 391,
+    "source": "contracts\\LimitOrder.algo.ts:75",
+    "pc": [
+      378,
+      379,
+      380
+    ]
+  },
+  {
+    "teal": 392,
+    "source": "contracts\\LimitOrder.algo.ts:75",
+    "pc": [
+      381
+    ]
+  },
+  {
+    "teal": 393,
+    "source": "contracts\\LimitOrder.algo.ts:75",
+    "pc": [
+      382
+    ]
+  },
+  {
+    "teal": 394,
+    "source": "contracts\\LimitOrder.algo.ts:75",
+    "pc": [
+      383
+    ]
+  },
+  {
+    "teal": 397,
+    "source": "contracts\\LimitOrder.algo.ts:75",
+    "errorMessage": "Invalid giving asset",
+    "pc": [
+      384
+    ]
+  },
+  {
+    "teal": 401,
+    "source": "contracts\\LimitOrder.algo.ts:68",
+    "pc": [
+      385,
+      386
+    ]
+  },
+  {
+    "teal": 402,
+    "source": "contracts\\LimitOrder.algo.ts:68",
+    "pc": [
+      387
+    ]
+  },
+  {
+    "teal": 405,
+    "source": "contracts\\LimitOrder.algo.ts:68",
+    "errorMessage": "box value does not exist: this.orders(orderId).value",
+    "pc": [
+      388
+    ]
+  },
+  {
+    "teal": 406,
+    "source": "contracts\\LimitOrder.algo.ts:76",
+    "pc": [
+      389,
+      390
+    ]
+  },
+  {
+    "teal": 407,
+    "source": "contracts\\LimitOrder.algo.ts:76",
+    "pc": [
+      391,
+      392
+    ]
+  },
+  {
+    "teal": 408,
+    "source": "contracts\\LimitOrder.algo.ts:76",
+    "pc": [
+      393,
+      394,
+      395
+    ]
+  },
+  {
+    "teal": 409,
+    "source": "contracts\\LimitOrder.algo.ts:76",
+    "pc": [
+      396
+    ]
+  },
+  {
+    "teal": 410,
+    "source": "contracts\\LimitOrder.algo.ts:76",
+    "pc": [
+      397,
+      398
+    ]
+  },
+  {
+    "teal": 411,
+    "source": "contracts\\LimitOrder.algo.ts:76",
+    "pc": [
+      399,
+      400
+    ]
+  },
+  {
+    "teal": 412,
+    "source": "contracts\\LimitOrder.algo.ts:76",
+    "pc": [
+      401
+    ]
+  },
+  {
+    "teal": 415,
+    "source": "contracts\\LimitOrder.algo.ts:76",
+    "errorMessage": "Invalid giving amount",
+    "pc": [
+      402
+    ]
+  },
+  {
+    "teal": 419,
+    "source": "contracts\\LimitOrder.algo.ts:77",
+    "pc": [
+      403,
+      404
+    ]
+  },
+  {
+    "teal": 420,
+    "source": "contracts\\LimitOrder.algo.ts:77",
+    "pc": [
+      405,
+      406
+    ]
+  },
+  {
+    "teal": 421,
+    "source": "contracts\\LimitOrder.algo.ts:77",
+    "pc": [
+      407,
+      408
+    ]
+  },
+  {
+    "teal": 422,
+    "source": "contracts\\LimitOrder.algo.ts:77",
+    "pc": [
+      409
+    ]
+  },
+  {
+    "teal": 425,
+    "source": "contracts\\LimitOrder.algo.ts:77",
+    "errorMessage": "Invalid sender",
+    "pc": [
+      410
+    ]
+  },
+  {
+    "teal": 429,
+    "source": "contracts\\LimitOrder.algo.ts:78",
+    "pc": [
+      411,
+      412
+    ]
+  },
+  {
+    "teal": 430,
+    "source": "contracts\\LimitOrder.algo.ts:78",
+    "pc": [
+      413,
+      414
+    ]
+  },
+  {
+    "teal": 431,
+    "source": "contracts\\LimitOrder.algo.ts:78",
+    "pc": [
+      415,
+      416
+    ]
+  },
+  {
+    "teal": 432,
+    "source": "contracts\\LimitOrder.algo.ts:78",
+    "pc": [
+      417
+    ]
+  },
+  {
+    "teal": 435,
+    "source": "contracts\\LimitOrder.algo.ts:78",
+    "errorMessage": "Invalid receiver",
+    "pc": [
+      418
+    ]
+  },
+  {
+    "teal": 436,
+    "source": "contracts\\LimitOrder.algo.ts:74",
+    "pc": [
+      419,
+      420,
+      421
+    ]
+  },
+  {
+    "teal": 441,
+    "source": "contracts\\LimitOrder.algo.ts:68",
+    "pc": [
+      422,
+      423
+    ]
+  },
+  {
+    "teal": 442,
+    "source": "contracts\\LimitOrder.algo.ts:68",
+    "pc": [
+      424
+    ]
+  },
+  {
+    "teal": 445,
+    "source": "contracts\\LimitOrder.algo.ts:68",
+    "errorMessage": "box value does not exist: this.orders(orderId).value",
+    "pc": [
+      425
+    ]
+  },
+  {
+    "teal": 446,
+    "source": "contracts\\LimitOrder.algo.ts:80",
+    "pc": [
+      426,
+      427
+    ]
+  },
+  {
+    "teal": 447,
+    "source": "contracts\\LimitOrder.algo.ts:80",
+    "pc": [
+      428,
+      429
+    ]
+  },
+  {
+    "teal": 448,
+    "source": "contracts\\LimitOrder.algo.ts:80",
+    "pc": [
+      430,
+      431,
+      432
+    ]
+  },
+  {
+    "teal": 449,
+    "source": "contracts\\LimitOrder.algo.ts:80",
+    "pc": [
+      433
+    ]
+  },
+  {
+    "teal": 450,
+    "source": "contracts\\LimitOrder.algo.ts:80",
+    "pc": [
+      434,
+      435
+    ]
+  },
+  {
+    "teal": 451,
+    "source": "contracts\\LimitOrder.algo.ts:80",
+    "pc": [
+      436,
+      437
+    ]
+  },
+  {
+    "teal": 452,
+    "source": "contracts\\LimitOrder.algo.ts:80",
+    "pc": [
+      438
+    ]
+  },
+  {
+    "teal": 455,
+    "source": "contracts\\LimitOrder.algo.ts:80",
+    "errorMessage": "Invalid giving asset",
+    "pc": [
+      439
+    ]
+  },
+  {
+    "teal": 459,
+    "source": "contracts\\LimitOrder.algo.ts:68",
+    "pc": [
+      440,
+      441
+    ]
+  },
+  {
+    "teal": 460,
+    "source": "contracts\\LimitOrder.algo.ts:68",
+    "pc": [
+      442
+    ]
+  },
+  {
+    "teal": 463,
+    "source": "contracts\\LimitOrder.algo.ts:68",
+    "errorMessage": "box value does not exist: this.orders(orderId).value",
+    "pc": [
+      443
+    ]
+  },
+  {
+    "teal": 464,
+    "source": "contracts\\LimitOrder.algo.ts:81",
+    "pc": [
+      444,
+      445
+    ]
+  },
+  {
+    "teal": 465,
+    "source": "contracts\\LimitOrder.algo.ts:81",
+    "pc": [
+      446,
+      447
+    ]
+  },
+  {
+    "teal": 466,
+    "source": "contracts\\LimitOrder.algo.ts:81",
+    "pc": [
+      448,
+      449,
+      450
+    ]
+  },
+  {
+    "teal": 467,
+    "source": "contracts\\LimitOrder.algo.ts:81",
+    "pc": [
+      451
+    ]
+  },
+  {
+    "teal": 468,
+    "source": "contracts\\LimitOrder.algo.ts:81",
+    "pc": [
+      452,
+      453
+    ]
+  },
+  {
+    "teal": 469,
+    "source": "contracts\\LimitOrder.algo.ts:81",
+    "pc": [
+      454,
+      455
+    ]
+  },
+  {
+    "teal": 470,
+    "source": "contracts\\LimitOrder.algo.ts:81",
+    "pc": [
+      456
+    ]
+  },
+  {
+    "teal": 473,
+    "source": "contracts\\LimitOrder.algo.ts:81",
+    "errorMessage": "Invalid giving amount",
+    "pc": [
+      457
+    ]
+  },
+  {
+    "teal": 477,
+    "source": "contracts\\LimitOrder.algo.ts:82",
+    "pc": [
+      458,
+      459
+    ]
+  },
+  {
+    "teal": 478,
+    "source": "contracts\\LimitOrder.algo.ts:82",
+    "pc": [
+      460,
+      461
+    ]
+  },
+  {
+    "teal": 479,
+    "source": "contracts\\LimitOrder.algo.ts:82",
+    "pc": [
+      462,
+      463
+    ]
+  },
+  {
+    "teal": 480,
+    "source": "contracts\\LimitOrder.algo.ts:82",
+    "pc": [
+      464
+    ]
+  },
+  {
+    "teal": 483,
+    "source": "contracts\\LimitOrder.algo.ts:82",
+    "errorMessage": "Invalid sender",
+    "pc": [
+      465
+    ]
+  },
+  {
+    "teal": 487,
+    "source": "contracts\\LimitOrder.algo.ts:83",
+    "pc": [
+      466,
+      467
+    ]
+  },
+  {
+    "teal": 488,
+    "source": "contracts\\LimitOrder.algo.ts:83",
+    "pc": [
+      468,
+      469
+    ]
+  },
+  {
+    "teal": 489,
+    "source": "contracts\\LimitOrder.algo.ts:83",
+    "pc": [
+      470,
+      471
+    ]
+  },
+  {
+    "teal": 490,
+    "source": "contracts\\LimitOrder.algo.ts:83",
+    "pc": [
+      472
+    ]
+  },
+  {
+    "teal": 493,
+    "source": "contracts\\LimitOrder.algo.ts:83",
+    "errorMessage": "Invalid receiver",
+    "pc": [
+      473
+    ]
+  },
+  {
+    "teal": 498,
+    "source": "contracts\\LimitOrder.algo.ts:85",
+    "pc": [
+      474,
+      475
+    ]
+  },
+  {
+    "teal": 499,
+    "source": "contracts\\LimitOrder.algo.ts:85",
+    "pc": [
+      476
+    ]
+  },
+  {
+    "teal": 500,
+    "source": "contracts\\LimitOrder.algo.ts:85",
+    "pc": [
+      477
+    ]
+  },
+  {
+    "teal": 503,
+    "source": "contracts\\LimitOrder.algo.ts:85",
+    "errorMessage": "box value does not exist: this.orders(orderId).value",
+    "pc": [
+      478
+    ]
+  },
+  {
+    "teal": 504,
+    "source": "contracts\\LimitOrder.algo.ts:85",
+    "pc": [
+      479,
+      480
+    ]
+  },
+  {
+    "teal": 505,
+    "source": "contracts\\LimitOrder.algo.ts:85",
+    "pc": [
+      481,
+      482
+    ]
+  },
+  {
+    "teal": 506,
+    "source": "contracts\\LimitOrder.algo.ts:85",
+    "pc": [
+      483
+    ]
+  },
+  {
+    "teal": 507,
+    "source": "contracts\\LimitOrder.algo.ts:85",
+    "pc": [
+      484
+    ]
+  },
+  {
+    "teal": 508,
+    "source": "contracts\\LimitOrder.algo.ts:85",
+    "pc": [
+      485
+    ]
+  },
+  {
+    "teal": 509,
+    "source": "contracts\\LimitOrder.algo.ts:85",
+    "pc": [
+      486,
+      487
+    ]
+  },
+  {
+    "teal": 510,
+    "source": "contracts\\LimitOrder.algo.ts:85",
+    "pc": [
+      488
+    ]
+  },
+  {
+    "teal": 511,
+    "source": "contracts\\LimitOrder.algo.ts:85",
+    "pc": [
+      489,
+      490
+    ]
+  },
+  {
+    "teal": 512,
+    "source": "contracts\\LimitOrder.algo.ts:85",
+    "pc": [
+      491
+    ]
+  },
+  {
+    "teal": 516,
+    "source": "contracts\\LimitOrder.algo.ts:86",
+    "pc": [
+      492,
+      493
+    ]
+  },
+  {
+    "teal": 517,
+    "source": "contracts\\LimitOrder.algo.ts:68",
+    "pc": [
+      494,
+      495
+    ]
+  },
+  {
+    "teal": 518,
+    "source": "contracts\\LimitOrder.algo.ts:68",
+    "pc": [
+      496
+    ]
+  },
+  {
+    "teal": 521,
+    "source": "contracts\\LimitOrder.algo.ts:68",
+    "errorMessage": "box value does not exist: this.orders(orderId).value",
+    "pc": [
+      497
+    ]
+  },
+  {
+    "teal": 522,
+    "source": "contracts\\LimitOrder.algo.ts:86",
+    "pc": [
+      498,
+      499
+    ]
+  },
+  {
+    "teal": 523,
+    "source": "contracts\\LimitOrder.algo.ts:86",
+    "pc": [
+      500,
+      501
+    ]
+  },
+  {
+    "teal": 524,
+    "source": "contracts\\LimitOrder.algo.ts:86",
+    "pc": [
+      502,
+      503,
+      504
+    ]
+  },
+  {
+    "teal": 525,
+    "source": "contracts\\LimitOrder.algo.ts:86",
+    "pc": [
+      505
+    ]
+  },
+  {
+    "teal": 526,
+    "source": "contracts\\LimitOrder.algo.ts:68",
+    "pc": [
+      506,
+      507
+    ]
+  },
+  {
+    "teal": 527,
+    "source": "contracts\\LimitOrder.algo.ts:68",
+    "pc": [
+      508
+    ]
+  },
+  {
+    "teal": 530,
+    "source": "contracts\\LimitOrder.algo.ts:68",
+    "errorMessage": "box value does not exist: this.orders(orderId).value",
+    "pc": [
+      509
+    ]
+  },
+  {
+    "teal": 531,
+    "source": "contracts\\LimitOrder.algo.ts:86",
+    "pc": [
+      510,
+      511
+    ]
+  },
+  {
+    "teal": 532,
+    "source": "contracts\\LimitOrder.algo.ts:86",
+    "pc": [
+      512,
+      513
+    ]
+  },
+  {
+    "teal": 533,
+    "source": "contracts\\LimitOrder.algo.ts:86",
+    "pc": [
+      514,
+      515,
+      516
+    ]
+  },
+  {
+    "teal": 534,
+    "source": "contracts\\LimitOrder.algo.ts:86",
+    "pc": [
+      517
+    ]
+  },
+  {
+    "teal": 535,
+    "source": "contracts\\LimitOrder.algo.ts:86",
+    "pc": [
+      518,
+      519,
+      520
+    ]
+  },
+  {
+    "teal": 540,
+    "source": "contracts\\LimitOrder.algo.ts:68",
+    "pc": [
+      521,
+      522
+    ]
+  },
+  {
+    "teal": 541,
+    "source": "contracts\\LimitOrder.algo.ts:68",
+    "pc": [
+      523
+    ]
+  },
+  {
+    "teal": 544,
+    "source": "contracts\\LimitOrder.algo.ts:68",
+    "errorMessage": "box value does not exist: this.orders(orderId).value",
+    "pc": [
+      524
+    ]
+  },
+  {
+    "teal": 545,
+    "source": "contracts\\LimitOrder.algo.ts:87",
+    "pc": [
+      525,
+      526
+    ]
+  },
+  {
+    "teal": 546,
+    "source": "contracts\\LimitOrder.algo.ts:87",
+    "pc": [
+      527,
+      528
+    ]
+  },
+  {
+    "teal": 547,
+    "source": "contracts\\LimitOrder.algo.ts:87",
+    "pc": [
+      529,
+      530,
+      531
+    ]
+  },
+  {
+    "teal": 548,
+    "source": "contracts\\LimitOrder.algo.ts:87",
+    "pc": [
+      532
+    ]
+  },
+  {
+    "teal": 549,
+    "source": "contracts\\LimitOrder.algo.ts:87",
+    "pc": [
+      533
+    ]
+  },
+  {
+    "teal": 550,
+    "source": "contracts\\LimitOrder.algo.ts:87",
+    "pc": [
+      534
+    ]
+  },
+  {
+    "teal": 551,
+    "source": "contracts\\LimitOrder.algo.ts:87",
+    "pc": [
+      535,
+      536,
+      537
+    ]
+  },
+  {
+    "teal": 556,
+    "source": "contracts\\LimitOrder.algo.ts:68",
+    "pc": [
+      538,
+      539
+    ]
+  },
+  {
+    "teal": 557,
+    "source": "contracts\\LimitOrder.algo.ts:68",
+    "pc": [
+      540
+    ]
+  },
+  {
+    "teal": 560,
+    "source": "contracts\\LimitOrder.algo.ts:68",
+    "errorMessage": "box value does not exist: this.orders(orderId).value",
+    "pc": [
+      541
+    ]
+  },
+  {
+    "teal": 561,
+    "source": "contracts\\LimitOrder.algo.ts:88",
+    "pc": [
+      542,
+      543
+    ]
+  },
+  {
+    "teal": 562,
+    "source": "contracts\\LimitOrder.algo.ts:88",
+    "pc": [
+      544,
+      545
+    ]
+  },
+  {
+    "teal": 563,
+    "source": "contracts\\LimitOrder.algo.ts:88",
+    "pc": [
+      546,
+      547,
+      548
+    ]
+  },
+  {
+    "teal": 564,
+    "source": "contracts\\LimitOrder.algo.ts:88",
+    "pc": [
+      549
+    ]
+  },
+  {
+    "teal": 565,
+    "source": "contracts\\LimitOrder.algo.ts:88",
+    "pc": [
+      550,
+      551
+    ]
+  },
+  {
+    "teal": 570,
+    "source": "contracts\\LimitOrder.algo.ts:68",
+    "pc": [
+      552,
+      553
+    ]
+  },
+  {
+    "teal": 571,
+    "source": "contracts\\LimitOrder.algo.ts:68",
+    "pc": [
+      554
+    ]
+  },
+  {
+    "teal": 574,
+    "source": "contracts\\LimitOrder.algo.ts:68",
+    "errorMessage": "box value does not exist: this.orders(orderId).value",
+    "pc": [
+      555
+    ]
+  },
+  {
+    "teal": 575,
+    "source": "contracts\\LimitOrder.algo.ts:89",
+    "pc": [
+      556,
+      557
+    ]
+  },
+  {
+    "teal": 576,
+    "source": "contracts\\LimitOrder.algo.ts:89",
+    "pc": [
+      558,
+      559
+    ]
+  },
+  {
+    "teal": 577,
+    "source": "contracts\\LimitOrder.algo.ts:89",
+    "pc": [
+      560,
+      561,
+      562
+    ]
+  },
+  {
+    "teal": 578,
+    "source": "contracts\\LimitOrder.algo.ts:89",
+    "pc": [
+      563,
+      564
+    ]
+  },
+  {
+    "teal": 579,
+    "source": "contracts\\LimitOrder.algo.ts:89",
+    "pc": [
+      565,
+      566
+    ]
+  },
+  {
+    "teal": 580,
+    "source": "contracts\\LimitOrder.algo.ts:89",
+    "pc": [
+      567
+    ]
+  },
+  {
+    "teal": 581,
+    "source": "contracts\\LimitOrder.algo.ts:89",
+    "pc": [
+      568
+    ]
+  },
+  {
+    "teal": 582,
+    "source": "contracts\\LimitOrder.algo.ts:89",
+    "pc": [
+      569,
+      570,
+      571
+    ]
+  },
+  {
+    "teal": 587,
+    "source": "contracts\\LimitOrder.algo.ts:90",
+    "pc": [
+      572,
+      573
+    ]
+  },
+  {
+    "teal": 588,
+    "source": "contracts\\LimitOrder.algo.ts:90",
+    "pc": [
+      574
+    ]
+  },
+  {
+    "teal": 589,
+    "source": "contracts\\LimitOrder.algo.ts:90",
+    "pc": [
+      575
+    ]
+  },
+  {
+    "teal": 592,
+    "source": "contracts\\LimitOrder.algo.ts:90",
+    "errorMessage": "box value does not exist: this.orders(orderId).value",
+    "pc": [
+      576
+    ]
+  },
+  {
+    "teal": 593,
+    "source": "contracts\\LimitOrder.algo.ts:90",
+    "pc": [
+      577,
+      578
+    ]
+  },
+  {
+    "teal": 594,
+    "source": "contracts\\LimitOrder.algo.ts:90",
+    "pc": [
+      579,
+      580
+    ]
+  },
+  {
+    "teal": 595,
+    "source": "contracts\\LimitOrder.algo.ts:90",
+    "pc": [
+      581,
+      582
+    ]
+  },
+  {
+    "teal": 596,
+    "source": "contracts\\LimitOrder.algo.ts:90",
+    "pc": [
+      583
+    ]
+  },
+  {
+    "teal": 597,
+    "source": "contracts\\LimitOrder.algo.ts:90",
+    "pc": [
+      584
+    ]
+  },
+  {
+    "teal": 598,
+    "source": "contracts\\LimitOrder.algo.ts:90",
+    "pc": [
+      585,
+      586
+    ]
+  },
+  {
+    "teal": 599,
+    "source": "contracts\\LimitOrder.algo.ts:90",
+    "pc": [
+      587
+    ]
+  },
+  {
+    "teal": 600,
+    "source": "contracts\\LimitOrder.algo.ts:90",
+    "pc": [
+      588,
+      589
+    ]
+  },
+  {
+    "teal": 601,
+    "source": "contracts\\LimitOrder.algo.ts:90",
+    "pc": [
+      590
+    ]
+  },
+  {
+    "teal": 605,
+    "source": "contracts\\LimitOrder.algo.ts:68",
+    "pc": [
+      591,
+      592
+    ]
+  },
+  {
+    "teal": 606,
+    "source": "contracts\\LimitOrder.algo.ts:68",
+    "pc": [
+      593
+    ]
+  },
+  {
+    "teal": 609,
+    "source": "contracts\\LimitOrder.algo.ts:68",
+    "errorMessage": "box value does not exist: this.orders(orderId).value",
+    "pc": [
+      594
+    ]
+  },
+  {
+    "teal": 610,
+    "source": "contracts\\LimitOrder.algo.ts:91",
+    "pc": [
+      595,
+      596
+    ]
+  },
+  {
+    "teal": 611,
+    "source": "contracts\\LimitOrder.algo.ts:91",
+    "pc": [
+      597,
+      598
+    ]
+  },
+  {
+    "teal": 612,
+    "source": "contracts\\LimitOrder.algo.ts:91",
+    "pc": [
+      599,
+      600,
+      601
+    ]
+  },
+  {
+    "teal": 613,
+    "source": "contracts\\LimitOrder.algo.ts:68",
+    "pc": [
+      602,
+      603
+    ]
+  },
+  {
+    "teal": 614,
+    "source": "contracts\\LimitOrder.algo.ts:68",
+    "pc": [
+      604
+    ]
+  },
+  {
+    "teal": 617,
+    "source": "contracts\\LimitOrder.algo.ts:68",
+    "errorMessage": "box value does not exist: this.orders(orderId).value",
+    "pc": [
+      605
+    ]
+  },
+  {
+    "teal": 618,
+    "source": "contracts\\LimitOrder.algo.ts:91",
+    "pc": [
+      606,
+      607
+    ]
+  },
+  {
+    "teal": 619,
+    "source": "contracts\\LimitOrder.algo.ts:91",
+    "pc": [
+      608,
+      609
+    ]
+  },
+  {
+    "teal": 620,
+    "source": "contracts\\LimitOrder.algo.ts:91",
+    "pc": [
+      610,
+      611,
+      612
+    ]
+  },
+  {
+    "teal": 621,
+    "source": "contracts\\LimitOrder.algo.ts:91",
+    "pc": [
+      613
+    ]
+  },
+  {
+    "teal": 622,
+    "source": "contracts\\LimitOrder.algo.ts:68",
+    "pc": [
+      614,
+      615
+    ]
+  },
+  {
+    "teal": 623,
+    "source": "contracts\\LimitOrder.algo.ts:68",
+    "pc": [
+      616
+    ]
+  },
+  {
+    "teal": 626,
+    "source": "contracts\\LimitOrder.algo.ts:68",
+    "errorMessage": "box value does not exist: this.orders(orderId).value",
+    "pc": [
+      617
+    ]
+  },
+  {
+    "teal": 627,
+    "source": "contracts\\LimitOrder.algo.ts:91",
+    "pc": [
+      618,
+      619
+    ]
+  },
+  {
+    "teal": 628,
+    "source": "contracts\\LimitOrder.algo.ts:91",
+    "pc": [
+      620,
+      621
+    ]
+  },
+  {
+    "teal": 629,
+    "source": "contracts\\LimitOrder.algo.ts:91",
+    "pc": [
+      622,
+      623,
+      624
+    ]
+  },
+  {
+    "teal": 630,
+    "source": "contracts\\LimitOrder.algo.ts:91",
+    "pc": [
+      625
+    ]
+  },
+  {
+    "teal": 631,
+    "source": "contracts\\LimitOrder.algo.ts:91",
+    "pc": [
+      626,
+      627,
+      628
+    ]
+  },
+  {
+    "teal": 634,
+    "source": "contracts\\LimitOrder.algo.ts:87",
+    "pc": [
+      629,
+      630,
+      631
+    ]
+  },
+  {
+    "teal": 639,
+    "source": "contracts\\LimitOrder.algo.ts:94",
+    "pc": [
+      632,
+      633
+    ]
+  },
+  {
+    "teal": 640,
+    "source": "contracts\\LimitOrder.algo.ts:94",
+    "pc": [
+      634
+    ]
+  },
+  {
+    "teal": 641,
+    "source": "contracts\\LimitOrder.algo.ts:94",
+    "pc": [
+      635
+    ]
+  },
+  {
+    "teal": 644,
+    "source": "contracts\\LimitOrder.algo.ts:94",
+    "errorMessage": "box value does not exist: this.orders(orderId).value",
+    "pc": [
+      636
+    ]
+  },
+  {
+    "teal": 645,
+    "source": "contracts\\LimitOrder.algo.ts:94",
+    "pc": [
+      637,
+      638
+    ]
+  },
+  {
+    "teal": 646,
+    "source": "contracts\\LimitOrder.algo.ts:94",
+    "pc": [
+      639,
+      640
+    ]
+  },
+  {
+    "teal": 647,
+    "source": "contracts\\LimitOrder.algo.ts:94",
+    "pc": [
+      641,
+      642
+    ]
+  },
+  {
+    "teal": 648,
+    "source": "contracts\\LimitOrder.algo.ts:94",
+    "pc": [
+      643
+    ]
+  },
+  {
+    "teal": 649,
+    "source": "contracts\\LimitOrder.algo.ts:94",
+    "pc": [
+      644
+    ]
+  },
+  {
+    "teal": 650,
+    "source": "contracts\\LimitOrder.algo.ts:94",
+    "pc": [
+      645,
+      646
+    ]
+  },
+  {
+    "teal": 651,
+    "source": "contracts\\LimitOrder.algo.ts:94",
+    "pc": [
+      647
+    ]
+  },
+  {
+    "teal": 652,
+    "source": "contracts\\LimitOrder.algo.ts:94",
+    "pc": [
+      648,
+      649
+    ]
+  },
+  {
+    "teal": 653,
+    "source": "contracts\\LimitOrder.algo.ts:94",
+    "pc": [
+      650
+    ]
+  },
+  {
+    "teal": 657,
+    "source": "contracts\\LimitOrder.algo.ts:68",
+    "pc": [
+      651,
+      652
+    ]
+  },
+  {
+    "teal": 658,
+    "source": "contracts\\LimitOrder.algo.ts:68",
+    "pc": [
+      653
+    ]
+  },
+  {
+    "teal": 661,
+    "source": "contracts\\LimitOrder.algo.ts:68",
+    "errorMessage": "box value does not exist: this.orders(orderId).value",
+    "pc": [
+      654
+    ]
+  },
+  {
+    "teal": 662,
+    "source": "contracts\\LimitOrder.algo.ts:95",
+    "pc": [
+      655,
+      656
+    ]
+  },
+  {
+    "teal": 663,
+    "source": "contracts\\LimitOrder.algo.ts:95",
+    "pc": [
+      657,
+      658
+    ]
+  },
+  {
+    "teal": 664,
+    "source": "contracts\\LimitOrder.algo.ts:95",
+    "pc": [
+      659,
+      660,
+      661
+    ]
+  },
+  {
+    "teal": 665,
+    "source": "contracts\\LimitOrder.algo.ts:68",
+    "pc": [
+      662,
+      663
+    ]
+  },
+  {
+    "teal": 666,
+    "source": "contracts\\LimitOrder.algo.ts:68",
+    "pc": [
+      664
+    ]
+  },
+  {
+    "teal": 669,
+    "source": "contracts\\LimitOrder.algo.ts:68",
+    "errorMessage": "box value does not exist: this.orders(orderId).value",
+    "pc": [
+      665
+    ]
+  },
+  {
+    "teal": 670,
+    "source": "contracts\\LimitOrder.algo.ts:95",
+    "pc": [
+      666,
+      667
+    ]
+  },
+  {
+    "teal": 671,
+    "source": "contracts\\LimitOrder.algo.ts:95",
+    "pc": [
+      668,
+      669
+    ]
+  },
+  {
+    "teal": 672,
+    "source": "contracts\\LimitOrder.algo.ts:95",
+    "pc": [
+      670,
+      671,
+      672
+    ]
+  },
+  {
+    "teal": 673,
+    "source": "contracts\\LimitOrder.algo.ts:95",
+    "pc": [
+      673
+    ]
+  },
+  {
+    "teal": 674,
+    "source": "contracts\\LimitOrder.algo.ts:68",
+    "pc": [
+      674,
+      675
+    ]
+  },
+  {
+    "teal": 675,
+    "source": "contracts\\LimitOrder.algo.ts:68",
+    "pc": [
+      676
+    ]
+  },
+  {
+    "teal": 678,
+    "source": "contracts\\LimitOrder.algo.ts:68",
+    "errorMessage": "box value does not exist: this.orders(orderId).value",
+    "pc": [
+      677
+    ]
+  },
+  {
+    "teal": 679,
+    "source": "contracts\\LimitOrder.algo.ts:95",
+    "pc": [
+      678,
+      679
+    ]
+  },
+  {
+    "teal": 680,
+    "source": "contracts\\LimitOrder.algo.ts:95",
+    "pc": [
+      680,
+      681
+    ]
+  },
+  {
+    "teal": 681,
+    "source": "contracts\\LimitOrder.algo.ts:95",
+    "pc": [
+      682,
+      683,
+      684
+    ]
+  },
+  {
+    "teal": 682,
+    "source": "contracts\\LimitOrder.algo.ts:95",
+    "pc": [
+      685
+    ]
+  },
+  {
+    "teal": 683,
+    "source": "contracts\\LimitOrder.algo.ts:95",
+    "pc": [
+      686,
+      687,
+      688
+    ]
+  },
+  {
+    "teal": 686,
+    "source": "contracts\\LimitOrder.algo.ts:66",
+    "pc": [
+      689
+    ]
+  },
+  {
+    "teal": 691,
+    "source": "contracts\\LimitOrder.algo.ts:99",
+    "pc": [
+      690,
+      691,
+      692
+    ]
+  },
+  {
+    "teal": 692,
+    "source": "contracts\\LimitOrder.algo.ts:99",
+    "pc": [
+      693
+    ]
+  },
+  {
+    "teal": 695,
+    "source": "contracts\\LimitOrder.algo.ts:99",
+    "pc": [
+      694,
+      695,
+      696
+    ]
+  },
+  {
+    "teal": 696,
+    "source": "contracts\\LimitOrder.algo.ts:99",
+    "pc": [
+      697
+    ]
+  },
+  {
+    "teal": 697,
+    "source": "contracts\\LimitOrder.algo.ts:99",
+    "pc": [
+      698
+    ]
+  },
+  {
+    "teal": 701,
+    "source": "contracts\\LimitOrder.algo.ts:99",
+    "pc": [
+      699,
+      700,
+      701
+    ]
+  },
+  {
+    "teal": 704,
+    "source": "contracts\\LimitOrder.algo.ts:99",
+    "pc": [
+      702
+    ]
+  },
+  {
+    "teal": 708,
+    "source": "contracts\\LimitOrder.algo.ts:100",
+    "pc": [
+      703,
+      704
+    ]
+  },
+  {
+    "teal": 709,
+    "source": "contracts\\LimitOrder.algo.ts:100",
+    "pc": [
+      705
+    ]
+  },
+  {
+    "teal": 710,
+    "source": "contracts\\LimitOrder.algo.ts:100",
+    "pc": [
+      706
+    ]
+  },
+  {
+    "teal": 711,
+    "source": "contracts\\LimitOrder.algo.ts:100",
+    "pc": [
+      707
+    ]
+  },
+  {
+    "teal": 712,
+    "source": "contracts\\LimitOrder.algo.ts:100",
+    "pc": [
+      708
+    ]
+  },
+  {
+    "teal": 715,
+    "source": "contracts\\LimitOrder.algo.ts:100",
+    "errorMessage": "Order not found",
+    "pc": [
+      709
+    ]
+  },
+  {
+    "teal": 719,
+    "source": "contracts\\LimitOrder.algo.ts:101",
+    "pc": [
+      710,
+      711
+    ]
+  },
+  {
+    "teal": 720,
+    "source": "contracts\\LimitOrder.algo.ts:101",
+    "pc": [
+      712
+    ]
+  },
+  {
+    "teal": 721,
+    "source": "contracts\\LimitOrder.algo.ts:101",
+    "pc": [
+      713,
+      714
+    ]
+  },
+  {
+    "teal": 725,
+    "source": "contracts\\LimitOrder.algo.ts:101",
+    "pc": [
+      715,
+      716
+    ]
+  },
+  {
+    "teal": 726,
+    "source": "contracts\\LimitOrder.algo.ts:101",
+    "pc": [
+      717
+    ]
+  },
+  {
+    "teal": 729,
+    "source": "contracts\\LimitOrder.algo.ts:101",
+    "errorMessage": "box value does not exist: this.orders(orderId).value",
+    "pc": [
+      718
+    ]
+  },
+  {
+    "teal": 730,
+    "source": "contracts\\LimitOrder.algo.ts:102",
+    "pc": [
+      719,
+      720
+    ]
+  },
+  {
+    "teal": 731,
+    "source": "contracts\\LimitOrder.algo.ts:102",
+    "pc": [
+      721,
+      722
+    ]
+  },
+  {
+    "teal": 732,
+    "source": "contracts\\LimitOrder.algo.ts:102",
+    "pc": [
+      723
+    ]
+  },
+  {
+    "teal": 733,
+    "source": "contracts\\LimitOrder.algo.ts:102",
+    "pc": [
+      724
+    ]
+  },
+  {
+    "teal": 736,
+    "source": "contracts\\LimitOrder.algo.ts:102",
+    "errorMessage": "Order not completed",
+    "pc": [
+      725
+    ]
+  },
+  {
+    "teal": 740,
+    "source": "contracts\\LimitOrder.algo.ts:101",
+    "pc": [
+      726,
+      727
+    ]
+  },
+  {
+    "teal": 741,
+    "source": "contracts\\LimitOrder.algo.ts:101",
+    "pc": [
+      728
+    ]
+  },
+  {
+    "teal": 744,
+    "source": "contracts\\LimitOrder.algo.ts:101",
+    "errorMessage": "box value does not exist: this.orders(orderId).value",
+    "pc": [
+      729
+    ]
+  },
+  {
+    "teal": 745,
+    "source": "contracts\\LimitOrder.algo.ts:103",
+    "pc": [
+      730,
+      731
+    ]
+  },
+  {
+    "teal": 746,
+    "source": "contracts\\LimitOrder.algo.ts:103",
+    "pc": [
+      732,
+      733
+    ]
+  },
+  {
+    "teal": 747,
+    "source": "contracts\\LimitOrder.algo.ts:103",
+    "pc": [
+      734,
+      735
+    ]
+  },
+  {
+    "teal": 748,
+    "source": "contracts\\LimitOrder.algo.ts:103",
+    "pc": [
+      736
+    ]
+  },
+  {
+    "teal": 749,
+    "source": "contracts\\LimitOrder.algo.ts:103",
+    "pc": [
+      737
+    ]
+  },
+  {
+    "teal": 752,
+    "source": "contracts\\LimitOrder.algo.ts:103",
+    "errorMessage": "Owner already claimed",
+    "pc": [
+      738
+    ]
+  },
+  {
+    "teal": 756,
+    "source": "contracts\\LimitOrder.algo.ts:104",
+    "pc": [
+      739,
+      740
+    ]
+  },
+  {
+    "teal": 757,
+    "source": "contracts\\LimitOrder.algo.ts:101",
+    "pc": [
+      741,
+      742
+    ]
+  },
+  {
+    "teal": 758,
+    "source": "contracts\\LimitOrder.algo.ts:101",
+    "pc": [
+      743
+    ]
+  },
+  {
+    "teal": 761,
+    "source": "contracts\\LimitOrder.algo.ts:101",
+    "errorMessage": "box value does not exist: this.orders(orderId).value",
+    "pc": [
+      744
+    ]
+  },
+  {
+    "teal": 762,
+    "source": "contracts\\LimitOrder.algo.ts:104",
+    "pc": [
+      745,
+      746
+    ]
+  },
+  {
+    "teal": 763,
+    "source": "contracts\\LimitOrder.algo.ts:104",
+    "pc": [
+      747,
+      748
+    ]
+  },
+  {
+    "teal": 764,
+    "source": "contracts\\LimitOrder.algo.ts:104",
+    "pc": [
+      749,
+      750,
+      751
+    ]
+  },
+  {
+    "teal": 765,
+    "source": "contracts\\LimitOrder.algo.ts:104",
+    "pc": [
+      752
+    ]
+  },
+  {
+    "teal": 768,
+    "source": "contracts\\LimitOrder.algo.ts:104",
+    "errorMessage": "Invalid sender",
+    "pc": [
+      753
+    ]
+  },
+  {
+    "teal": 781,
+    "source": "contracts\\LimitOrder.algo.ts:105",
+    "pc": [
+      754,
+      755
+    ]
+  },
+  {
+    "teal": 782,
+    "source": "contracts\\LimitOrder.algo.ts:105",
+    "pc": [
+      756
+    ]
+  },
+  {
+    "teal": 783,
+    "source": "contracts\\LimitOrder.algo.ts:101",
+    "pc": [
+      757,
+      758
+    ]
+  },
+  {
+    "teal": 784,
+    "source": "contracts\\LimitOrder.algo.ts:101",
+    "pc": [
+      759
+    ]
+  },
+  {
+    "teal": 787,
+    "source": "contracts\\LimitOrder.algo.ts:101",
+    "errorMessage": "box value does not exist: this.orders(orderId).value",
+    "pc": [
+      760
+    ]
+  },
+  {
+    "teal": 788,
+    "source": "contracts\\LimitOrder.algo.ts:106",
+    "pc": [
+      761,
+      762
+    ]
+  },
+  {
+    "teal": 789,
+    "source": "contracts\\LimitOrder.algo.ts:106",
+    "pc": [
+      763,
+      764
+    ]
+  },
+  {
+    "teal": 790,
+    "source": "contracts\\LimitOrder.algo.ts:106",
+    "pc": [
+      765,
+      766,
+      767
+    ]
+  },
+  {
+    "teal": 791,
+    "source": "contracts\\LimitOrder.algo.ts:106",
+    "pc": [
+      768
+    ]
+  },
+  {
+    "teal": 792,
+    "source": "contracts\\LimitOrder.algo.ts:106",
+    "pc": [
+      769
+    ]
+  },
+  {
+    "teal": 793,
+    "source": "contracts\\LimitOrder.algo.ts:101",
+    "pc": [
+      770,
+      771
+    ]
+  },
+  {
+    "teal": 794,
+    "source": "contracts\\LimitOrder.algo.ts:101",
+    "pc": [
+      772
+    ]
+  },
+  {
+    "teal": 797,
+    "source": "contracts\\LimitOrder.algo.ts:101",
+    "errorMessage": "box value does not exist: this.orders(orderId).value",
+    "pc": [
+      773
+    ]
+  },
+  {
+    "teal": 798,
+    "source": "contracts\\LimitOrder.algo.ts:107",
+    "pc": [
+      774,
+      775
+    ]
+  },
+  {
+    "teal": 799,
+    "source": "contracts\\LimitOrder.algo.ts:107",
+    "pc": [
+      776,
+      777
+    ]
+  },
+  {
+    "teal": 800,
+    "source": "contracts\\LimitOrder.algo.ts:107",
+    "pc": [
+      778,
+      779,
+      780
+    ]
+  },
+  {
+    "teal": 801,
+    "source": "contracts\\LimitOrder.algo.ts:107",
+    "pc": [
+      781
+    ]
+  },
+  {
+    "teal": 802,
+    "source": "contracts\\LimitOrder.algo.ts:101",
+    "pc": [
+      782,
+      783
+    ]
+  },
+  {
+    "teal": 803,
+    "source": "contracts\\LimitOrder.algo.ts:101",
+    "pc": [
+      784
+    ]
+  },
+  {
+    "teal": 806,
+    "source": "contracts\\LimitOrder.algo.ts:101",
+    "errorMessage": "box value does not exist: this.orders(orderId).value",
+    "pc": [
+      785
+    ]
+  },
+  {
+    "teal": 807,
+    "source": "contracts\\LimitOrder.algo.ts:108",
+    "pc": [
+      786,
+      787
+    ]
+  },
+  {
+    "teal": 808,
+    "source": "contracts\\LimitOrder.algo.ts:108",
+    "pc": [
+      788,
+      789
+    ]
+  },
+  {
+    "teal": 809,
+    "source": "contracts\\LimitOrder.algo.ts:108",
+    "pc": [
+      790,
+      791,
+      792
+    ]
+  },
+  {
+    "teal": 810,
+    "source": "contracts\\LimitOrder.algo.ts:108",
+    "pc": [
+      793
+    ]
+  },
+  {
+    "teal": 811,
+    "source": "contracts\\LimitOrder.algo.ts:108",
+    "pc": [
+      794
+    ]
+  },
+  {
+    "teal": 812,
+    "source": "contracts\\LimitOrder.algo.ts:108",
+    "pc": [
+      795
+    ]
+  },
+  {
+    "teal": 813,
+    "source": "contracts\\LimitOrder.algo.ts:101",
+    "pc": [
+      796,
+      797
+    ]
+  },
+  {
+    "teal": 814,
+    "source": "contracts\\LimitOrder.algo.ts:101",
+    "pc": [
+      798
+    ]
+  },
+  {
+    "teal": 817,
+    "source": "contracts\\LimitOrder.algo.ts:101",
+    "errorMessage": "box value does not exist: this.orders(orderId).value",
+    "pc": [
+      799
+    ]
+  },
+  {
+    "teal": 818,
+    "source": "contracts\\LimitOrder.algo.ts:109",
+    "pc": [
+      800,
+      801
+    ]
+  },
+  {
+    "teal": 819,
+    "source": "contracts\\LimitOrder.algo.ts:109",
+    "pc": [
+      802,
+      803
+    ]
+  },
+  {
+    "teal": 820,
+    "source": "contracts\\LimitOrder.algo.ts:109",
+    "pc": [
+      804,
+      805,
+      806
+    ]
+  },
+  {
+    "teal": 821,
+    "source": "contracts\\LimitOrder.algo.ts:109",
+    "pc": [
+      807
+    ]
+  },
+  {
+    "teal": 822,
+    "source": "contracts\\LimitOrder.algo.ts:109",
+    "pc": [
+      808
+    ]
+  },
+  {
+    "teal": 823,
+    "source": "contracts\\LimitOrder.algo.ts:109",
+    "pc": [
+      809
+    ]
+  },
+  {
+    "teal": 824,
+    "source": "contracts\\LimitOrder.algo.ts:101",
+    "pc": [
+      810,
+      811
+    ]
+  },
+  {
+    "teal": 825,
+    "source": "contracts\\LimitOrder.algo.ts:101",
+    "pc": [
+      812
+    ]
+  },
+  {
+    "teal": 828,
+    "source": "contracts\\LimitOrder.algo.ts:101",
+    "errorMessage": "box value does not exist: this.orders(orderId).value",
+    "pc": [
+      813
+    ]
+  },
+  {
+    "teal": 829,
+    "source": "contracts\\LimitOrder.algo.ts:110",
+    "pc": [
+      814,
+      815
+    ]
+  },
+  {
+    "teal": 830,
+    "source": "contracts\\LimitOrder.algo.ts:110",
+    "pc": [
+      816,
+      817
+    ]
+  },
+  {
+    "teal": 831,
+    "source": "contracts\\LimitOrder.algo.ts:110",
+    "pc": [
+      818,
+      819,
+      820
+    ]
+  },
+  {
+    "teal": 832,
+    "source": "contracts\\LimitOrder.algo.ts:110",
+    "pc": [
+      821
+    ]
+  },
+  {
+    "teal": 833,
+    "source": "contracts\\LimitOrder.algo.ts:110",
+    "pc": [
+      822
+    ]
+  },
+  {
+    "teal": 834,
+    "source": "contracts\\LimitOrder.algo.ts:110",
+    "pc": [
+      823
+    ]
+  },
+  {
+    "teal": 835,
+    "source": "contracts\\LimitOrder.algo.ts:101",
+    "pc": [
+      824,
+      825
+    ]
+  },
+  {
+    "teal": 836,
+    "source": "contracts\\LimitOrder.algo.ts:101",
+    "pc": [
+      826
+    ]
+  },
+  {
+    "teal": 839,
+    "source": "contracts\\LimitOrder.algo.ts:101",
+    "errorMessage": "box value does not exist: this.orders(orderId).value",
+    "pc": [
+      827
+    ]
+  },
+  {
+    "teal": 840,
+    "source": "contracts\\LimitOrder.algo.ts:111",
+    "pc": [
+      828,
+      829
+    ]
+  },
+  {
+    "teal": 841,
+    "source": "contracts\\LimitOrder.algo.ts:111",
+    "pc": [
+      830,
+      831
+    ]
+  },
+  {
+    "teal": 842,
+    "source": "contracts\\LimitOrder.algo.ts:111",
+    "pc": [
+      832,
+      833,
+      834
+    ]
+  },
+  {
+    "teal": 843,
+    "source": "contracts\\LimitOrder.algo.ts:111",
+    "pc": [
+      835
+    ]
+  },
+  {
+    "teal": 844,
+    "source": "contracts\\LimitOrder.algo.ts:111",
+    "pc": [
+      836
+    ]
+  },
+  {
+    "teal": 845,
+    "source": "contracts\\LimitOrder.algo.ts:111",
+    "pc": [
+      837
+    ]
+  },
+  {
+    "teal": 846,
+    "source": "contracts\\LimitOrder.algo.ts:112",
+    "pc": [
+      838
+    ]
+  },
+  {
+    "teal": 847,
+    "source": "contracts\\LimitOrder.algo.ts:112",
+    "pc": [
+      839
+    ]
+  },
+  {
+    "teal": 848,
+    "source": "contracts\\LimitOrder.algo.ts:101",
+    "pc": [
+      840,
+      841
+    ]
+  },
+  {
+    "teal": 849,
+    "source": "contracts\\LimitOrder.algo.ts:101",
+    "pc": [
+      842
+    ]
+  },
+  {
+    "teal": 852,
+    "source": "contracts\\LimitOrder.algo.ts:101",
+    "errorMessage": "box value does not exist: this.orders(orderId).value",
+    "pc": [
+      843
+    ]
+  },
+  {
+    "teal": 853,
+    "source": "contracts\\LimitOrder.algo.ts:112",
+    "pc": [
+      844,
+      845
+    ]
+  },
+  {
+    "teal": 854,
+    "source": "contracts\\LimitOrder.algo.ts:112",
+    "pc": [
+      846,
+      847
+    ]
+  },
+  {
+    "teal": 855,
+    "source": "contracts\\LimitOrder.algo.ts:112",
+    "pc": [
+      848
+    ]
+  },
+  {
+    "teal": 856,
+    "source": "contracts\\LimitOrder.algo.ts:112",
+    "pc": [
+      849
+    ]
+  },
+  {
+    "teal": 857,
+    "source": "contracts\\LimitOrder.algo.ts:112",
+    "pc": [
+      850
+    ]
+  },
+  {
+    "teal": 858,
+    "source": "contracts\\LimitOrder.algo.ts:113",
+    "pc": [
+      851
+    ]
+  },
+  {
+    "teal": 859,
+    "source": "contracts\\LimitOrder.algo.ts:113",
+    "pc": [
+      852
+    ]
+  },
+  {
+    "teal": 860,
+    "source": "contracts\\LimitOrder.algo.ts:113",
+    "pc": [
+      853
+    ]
+  },
+  {
+    "teal": 861,
+    "source": "contracts\\LimitOrder.algo.ts:105",
+    "pc": [
+      854
+    ]
+  },
+  {
+    "teal": 862,
+    "source": "contracts\\LimitOrder.algo.ts:105",
+    "pc": [
+      855
+    ]
+  },
+  {
+    "teal": 866,
+    "source": "contracts\\LimitOrder.algo.ts:101",
+    "pc": [
+      856,
+      857
+    ]
+  },
+  {
+    "teal": 867,
+    "source": "contracts\\LimitOrder.algo.ts:101",
+    "pc": [
+      858
+    ]
+  },
+  {
+    "teal": 870,
+    "source": "contracts\\LimitOrder.algo.ts:101",
+    "errorMessage": "box value does not exist: this.orders(orderId).value",
+    "pc": [
+      859
+    ]
+  },
+  {
+    "teal": 871,
+    "source": "contracts\\LimitOrder.algo.ts:115",
+    "pc": [
+      860,
+      861
+    ]
+  },
+  {
+    "teal": 872,
+    "source": "contracts\\LimitOrder.algo.ts:115",
+    "pc": [
+      862,
+      863
+    ]
+  },
+  {
+    "teal": 873,
+    "source": "contracts\\LimitOrder.algo.ts:115",
+    "pc": [
+      864,
+      865,
+      866
+    ]
+  },
+  {
+    "teal": 874,
+    "source": "contracts\\LimitOrder.algo.ts:101",
+    "pc": [
+      867,
+      868
+    ]
+  },
+  {
+    "teal": 875,
+    "source": "contracts\\LimitOrder.algo.ts:101",
+    "pc": [
+      869
+    ]
+  },
+  {
+    "teal": 878,
+    "source": "contracts\\LimitOrder.algo.ts:101",
+    "errorMessage": "box value does not exist: this.orders(orderId).value",
+    "pc": [
+      870
+    ]
+  },
+  {
+    "teal": 879,
+    "source": "contracts\\LimitOrder.algo.ts:115",
+    "pc": [
+      871,
+      872
+    ]
+  },
+  {
+    "teal": 880,
+    "source": "contracts\\LimitOrder.algo.ts:115",
+    "pc": [
+      873,
+      874
+    ]
+  },
+  {
+    "teal": 881,
+    "source": "contracts\\LimitOrder.algo.ts:115",
+    "pc": [
+      875,
+      876,
+      877
+    ]
+  },
+  {
+    "teal": 882,
+    "source": "contracts\\LimitOrder.algo.ts:115",
+    "pc": [
+      878
+    ]
+  },
+  {
+    "teal": 883,
+    "source": "contracts\\LimitOrder.algo.ts:101",
+    "pc": [
+      879,
+      880
+    ]
+  },
+  {
+    "teal": 884,
+    "source": "contracts\\LimitOrder.algo.ts:101",
+    "pc": [
+      881
+    ]
+  },
+  {
+    "teal": 887,
+    "source": "contracts\\LimitOrder.algo.ts:101",
+    "errorMessage": "box value does not exist: this.orders(orderId).value",
+    "pc": [
+      882
+    ]
+  },
+  {
+    "teal": 888,
+    "source": "contracts\\LimitOrder.algo.ts:115",
+    "pc": [
+      883,
+      884
+    ]
+  },
+  {
+    "teal": 889,
+    "source": "contracts\\LimitOrder.algo.ts:115",
+    "pc": [
+      885,
+      886
+    ]
+  },
+  {
+    "teal": 890,
+    "source": "contracts\\LimitOrder.algo.ts:115",
+    "pc": [
+      887,
+      888,
+      889
+    ]
+  },
+  {
+    "teal": 891,
+    "source": "contracts\\LimitOrder.algo.ts:115",
+    "pc": [
+      890
+    ]
+  },
+  {
+    "teal": 892,
+    "source": "contracts\\LimitOrder.algo.ts:115",
+    "pc": [
+      891,
+      892,
+      893
+    ]
+  },
+  {
+    "teal": 893,
+    "source": "contracts\\LimitOrder.algo.ts:99",
+    "pc": [
+      894
+    ]
+  },
+  {
+    "teal": 898,
+    "source": "contracts\\LimitOrder.algo.ts:118",
+    "pc": [
+      895,
+      896
+    ]
+  },
+  {
+    "teal": 899,
+    "source": "contracts\\LimitOrder.algo.ts:118",
+    "pc": [
+      897
+    ]
+  },
+  {
+    "teal": 900,
+    "source": "contracts\\LimitOrder.algo.ts:118",
+    "pc": [
+      898
+    ]
+  },
+  {
+    "teal": 901,
+    "source": "contracts\\LimitOrder.algo.ts:118",
+    "pc": [
+      899
+    ]
+  },
+  {
+    "teal": 902,
+    "source": "contracts\\LimitOrder.algo.ts:118",
+    "pc": [
+      900,
+      901
+    ]
+  },
+  {
+    "teal": 903,
+    "source": "contracts\\LimitOrder.algo.ts:118",
+    "pc": [
+      902
+    ]
+  },
+  {
+    "teal": 904,
+    "source": "contracts\\LimitOrder.algo.ts:118",
+    "pc": [
+      903
+    ]
+  },
+  {
+    "teal": 907,
+    "source": "contracts\\LimitOrder.algo.ts:118",
+    "errorMessage": "argument 0 (mbrTxn) for optInToAsset must be a pay transaction",
+    "pc": [
+      904
+    ]
+  },
+  {
+    "teal": 910,
+    "source": "contracts\\LimitOrder.algo.ts:118",
+    "pc": [
+      905,
+      906,
+      907
+    ]
+  },
+  {
+    "teal": 911,
+    "source": "contracts\\LimitOrder.algo.ts:118",
+    "pc": [
+      908
+    ]
+  },
+  {
+    "teal": 914,
+    "source": "contracts\\LimitOrder.algo.ts:118",
+    "pc": [
+      909,
+      910,
+      911
+    ]
+  },
+  {
+    "teal": 915,
+    "source": "contracts\\LimitOrder.algo.ts:118",
+    "pc": [
+      912
+    ]
+  },
+  {
+    "teal": 916,
+    "source": "contracts\\LimitOrder.algo.ts:118",
+    "pc": [
+      913
+    ]
+  },
+  {
+    "teal": 920,
+    "source": "contracts\\LimitOrder.algo.ts:118",
+    "pc": [
+      914,
+      915,
+      916
+    ]
+  },
+  {
+    "teal": 924,
+    "source": "contracts\\LimitOrder.algo.ts:119",
+    "pc": [
+      917,
+      918
+    ]
+  },
+  {
+    "teal": 925,
+    "source": "contracts\\LimitOrder.algo.ts:119",
+    "pc": [
+      919,
+      920
+    ]
+  },
+  {
+    "teal": 926,
+    "source": "contracts\\LimitOrder.algo.ts:119",
+    "pc": [
+      921,
+      922
+    ]
+  },
+  {
+    "teal": 927,
+    "source": "contracts\\LimitOrder.algo.ts:119",
+    "pc": [
+      923
+    ]
+  },
+  {
+    "teal": 928,
+    "source": "contracts\\LimitOrder.algo.ts:119",
+    "pc": [
+      924
+    ]
+  },
+  {
+    "teal": 929,
+    "source": "contracts\\LimitOrder.algo.ts:119",
+    "pc": [
+      925
+    ]
+  },
+  {
+    "teal": 932,
+    "source": "contracts\\LimitOrder.algo.ts:119",
+    "errorMessage": "Already opted in",
+    "pc": [
+      926
+    ]
+  },
+  {
+    "teal": 937,
+    "source": "contracts\\LimitOrder.algo.ts:120",
+    "pc": [
+      927,
+      928
+    ]
+  },
+  {
+    "teal": 938,
+    "source": "contracts\\LimitOrder.algo.ts:120",
+    "pc": [
+      929,
+      930
+    ]
+  },
+  {
+    "teal": 939,
+    "source": "contracts\\LimitOrder.algo.ts:120",
+    "pc": [
+      931,
+      932
+    ]
+  },
+  {
+    "teal": 940,
+    "source": "contracts\\LimitOrder.algo.ts:120",
+    "pc": [
+      933
+    ]
+  },
+  {
+    "teal": 943,
+    "source": "contracts\\LimitOrder.algo.ts:120",
+    "errorMessage": "transaction verification failed: {\"txn\":\"mbrTxn\",\"field\":\"amount\",\"condition\":\"greaterThanEqualTo\",\"expected\":\">=globals.assetOptInMinBalance\"}",
+    "pc": [
+      934
+    ]
+  },
+  {
+    "teal": 947,
+    "source": "contracts\\LimitOrder.algo.ts:121",
+    "pc": [
+      935
+    ]
+  },
+  {
+    "teal": 948,
+    "source": "contracts\\LimitOrder.algo.ts:121",
+    "pc": [
+      936
+    ]
+  },
+  {
+    "teal": 949,
+    "source": "contracts\\LimitOrder.algo.ts:121",
+    "pc": [
+      937,
+      938
+    ]
+  },
+  {
+    "teal": 953,
+    "source": "contracts\\LimitOrder.algo.ts:121",
+    "pc": [
+      939,
+      940
+    ]
+  },
+  {
+    "teal": 954,
+    "source": "contracts\\LimitOrder.algo.ts:121",
+    "pc": [
+      941,
+      942
+    ]
+  },
+  {
+    "teal": 958,
+    "source": "contracts\\LimitOrder.algo.ts:121",
+    "pc": [
+      943,
+      944
+    ]
+  },
+  {
+    "teal": 959,
+    "source": "contracts\\LimitOrder.algo.ts:121",
+    "pc": [
+      945,
+      946
+    ]
+  },
+  {
+    "teal": 963,
+    "source": "contracts\\LimitOrder.algo.ts:121",
+    "pc": [
+      947
+    ]
+  },
+  {
+    "teal": 964,
+    "source": "contracts\\LimitOrder.algo.ts:121",
+    "pc": [
+      948,
+      949
+    ]
+  },
+  {
+    "teal": 967,
+    "source": "contracts\\LimitOrder.algo.ts:121",
+    "pc": [
+      950
+    ]
+  },
+  {
+    "teal": 968,
+    "source": "contracts\\LimitOrder.algo.ts:121",
+    "pc": [
+      951,
+      952
+    ]
+  },
+  {
+    "teal": 971,
+    "source": "contracts\\LimitOrder.algo.ts:121",
+    "pc": [
+      953
+    ]
+  },
+  {
+    "teal": 972,
+    "source": "contracts\\LimitOrder.algo.ts:118",
+    "pc": [
+      954
+    ]
+  },
+  {
+    "teal": 977,
+    "source": "contracts\\LimitOrder.algo.ts:124",
+    "pc": [
+      955,
+      956,
+      957
+    ]
+  },
+  {
+    "teal": 978,
+    "source": "contracts\\LimitOrder.algo.ts:124",
+    "pc": [
+      958
+    ]
+  },
+  {
+    "teal": 981,
+    "source": "contracts\\LimitOrder.algo.ts:124",
+    "pc": [
+      959,
+      960,
+      961
+    ]
+  },
+  {
+    "teal": 982,
+    "source": "contracts\\LimitOrder.algo.ts:124",
+    "pc": [
+      962
+    ]
+  },
+  {
+    "teal": 983,
+    "source": "contracts\\LimitOrder.algo.ts:124",
+    "pc": [
+      963
+    ]
+  },
+  {
+    "teal": 987,
+    "source": "contracts\\LimitOrder.algo.ts:124",
+    "pc": [
+      964,
+      965,
+      966
+    ]
+  },
+  {
+    "teal": 990,
+    "source": "contracts\\LimitOrder.algo.ts:124",
+    "pc": [
+      967
+    ]
+  },
+  {
+    "teal": 994,
+    "source": "contracts\\LimitOrder.algo.ts:125",
+    "pc": [
+      968,
+      969
+    ]
+  },
+  {
+    "teal": 995,
+    "source": "contracts\\LimitOrder.algo.ts:125",
+    "pc": [
+      970
+    ]
+  },
+  {
+    "teal": 996,
+    "source": "contracts\\LimitOrder.algo.ts:125",
+    "pc": [
+      971
+    ]
+  },
+  {
+    "teal": 997,
+    "source": "contracts\\LimitOrder.algo.ts:125",
+    "pc": [
+      972
+    ]
+  },
+  {
+    "teal": 998,
+    "source": "contracts\\LimitOrder.algo.ts:125",
+    "pc": [
+      973
+    ]
+  },
+  {
+    "teal": 1001,
+    "source": "contracts\\LimitOrder.algo.ts:125",
+    "errorMessage": "Order not found",
+    "pc": [
+      974
+    ]
+  },
+  {
+    "teal": 1005,
+    "source": "contracts\\LimitOrder.algo.ts:126",
+    "pc": [
+      975,
+      976
+    ]
+  },
+  {
+    "teal": 1006,
+    "source": "contracts\\LimitOrder.algo.ts:126",
+    "pc": [
+      977
+    ]
+  },
+  {
+    "teal": 1007,
+    "source": "contracts\\LimitOrder.algo.ts:126",
+    "pc": [
+      978,
+      979
+    ]
+  },
+  {
+    "teal": 1011,
+    "source": "contracts\\LimitOrder.algo.ts:126",
+    "pc": [
+      980,
+      981
+    ]
+  },
+  {
+    "teal": 1012,
+    "source": "contracts\\LimitOrder.algo.ts:126",
+    "pc": [
+      982
+    ]
+  },
+  {
+    "teal": 1015,
+    "source": "contracts\\LimitOrder.algo.ts:126",
+    "errorMessage": "box value does not exist: this.orders(orderId).value",
+    "pc": [
+      983
+    ]
+  },
+  {
+    "teal": 1016,
+    "source": "contracts\\LimitOrder.algo.ts:127",
+    "pc": [
+      984,
+      985
+    ]
+  },
+  {
+    "teal": 1017,
+    "source": "contracts\\LimitOrder.algo.ts:127",
+    "pc": [
+      986,
+      987
+    ]
+  },
+  {
+    "teal": 1018,
+    "source": "contracts\\LimitOrder.algo.ts:127",
+    "pc": [
+      988,
+      989,
+      990
+    ]
+  },
+  {
+    "teal": 1019,
+    "source": "contracts\\LimitOrder.algo.ts:127",
+    "pc": [
+      991,
+      992
+    ]
+  },
+  {
+    "teal": 1020,
+    "source": "contracts\\LimitOrder.algo.ts:127",
+    "pc": [
+      993
+    ]
+  },
+  {
+    "teal": 1023,
+    "source": "contracts\\LimitOrder.algo.ts:127",
+    "errorMessage": "Invalid sender",
+    "pc": [
+      994
+    ]
+  },
+  {
+    "teal": 1027,
+    "source": "contracts\\LimitOrder.algo.ts:126",
+    "pc": [
+      995,
+      996
+    ]
+  },
+  {
+    "teal": 1028,
+    "source": "contracts\\LimitOrder.algo.ts:126",
+    "pc": [
+      997
+    ]
+  },
+  {
+    "teal": 1031,
+    "source": "contracts\\LimitOrder.algo.ts:126",
+    "errorMessage": "box value does not exist: this.orders(orderId).value",
+    "pc": [
+      998
+    ]
+  },
+  {
+    "teal": 1032,
+    "source": "contracts\\LimitOrder.algo.ts:128",
+    "pc": [
+      999,
+      1000
+    ]
+  },
+  {
+    "teal": 1033,
+    "source": "contracts\\LimitOrder.algo.ts:128",
+    "pc": [
+      1001,
+      1002
+    ]
+  },
+  {
+    "teal": 1034,
+    "source": "contracts\\LimitOrder.algo.ts:128",
+    "pc": [
+      1003
+    ]
+  },
+  {
+    "teal": 1035,
+    "source": "contracts\\LimitOrder.algo.ts:128",
+    "pc": [
+      1004
+    ]
+  },
+  {
+    "teal": 1036,
+    "source": "contracts\\LimitOrder.algo.ts:128",
+    "pc": [
+      1005
+    ]
+  },
+  {
+    "teal": 1039,
+    "source": "contracts\\LimitOrder.algo.ts:128",
+    "errorMessage": "Order already completed",
+    "pc": [
+      1006
+    ]
+  },
+  {
+    "teal": 1043,
+    "source": "contracts\\LimitOrder.algo.ts:129",
+    "pc": [
+      1007,
+      1008
+    ]
+  },
+  {
+    "teal": 1044,
+    "source": "contracts\\LimitOrder.algo.ts:129",
+    "pc": [
+      1009
+    ]
+  },
+  {
+    "teal": 1045,
+    "source": "contracts\\LimitOrder.algo.ts:129",
+    "pc": [
+      1010
+    ]
+  },
+  {
+    "teal": 1049,
+    "source": "contracts\\LimitOrder.algo.ts:130",
+    "pc": [
+      1011,
+      1012
+    ]
+  },
+  {
+    "teal": 1050,
+    "source": "contracts\\LimitOrder.algo.ts:126",
+    "pc": [
+      1013,
+      1014
+    ]
+  },
+  {
+    "teal": 1051,
+    "source": "contracts\\LimitOrder.algo.ts:126",
+    "pc": [
+      1015
+    ]
+  },
+  {
+    "teal": 1054,
+    "source": "contracts\\LimitOrder.algo.ts:126",
+    "errorMessage": "box value does not exist: this.orders(orderId).value",
+    "pc": [
+      1016
+    ]
+  },
+  {
+    "teal": 1055,
+    "source": "contracts\\LimitOrder.algo.ts:130",
+    "pc": [
+      1017,
+      1018
+    ]
+  },
+  {
+    "teal": 1056,
+    "source": "contracts\\LimitOrder.algo.ts:130",
+    "pc": [
+      1019,
+      1020
+    ]
+  },
+  {
+    "teal": 1057,
+    "source": "contracts\\LimitOrder.algo.ts:130",
+    "pc": [
+      1021,
+      1022,
+      1023
+    ]
+  },
+  {
+    "teal": 1058,
+    "source": "contracts\\LimitOrder.algo.ts:130",
+    "pc": [
+      1024
+    ]
+  },
+  {
+    "teal": 1059,
+    "source": "contracts\\LimitOrder.algo.ts:126",
+    "pc": [
+      1025,
+      1026
+    ]
+  },
+  {
+    "teal": 1060,
+    "source": "contracts\\LimitOrder.algo.ts:126",
+    "pc": [
+      1027
+    ]
+  },
+  {
+    "teal": 1063,
+    "source": "contracts\\LimitOrder.algo.ts:126",
+    "errorMessage": "box value does not exist: this.orders(orderId).value",
+    "pc": [
+      1028
+    ]
+  },
+  {
+    "teal": 1064,
+    "source": "contracts\\LimitOrder.algo.ts:130",
+    "pc": [
+      1029,
+      1030
+    ]
+  },
+  {
+    "teal": 1065,
+    "source": "contracts\\LimitOrder.algo.ts:130",
+    "pc": [
+      1031,
+      1032
+    ]
+  },
+  {
+    "teal": 1066,
+    "source": "contracts\\LimitOrder.algo.ts:130",
+    "pc": [
+      1033,
+      1034,
+      1035
+    ]
+  },
+  {
+    "teal": 1067,
+    "source": "contracts\\LimitOrder.algo.ts:130",
+    "pc": [
+      1036
+    ]
+  },
+  {
+    "teal": 1068,
+    "source": "contracts\\LimitOrder.algo.ts:130",
+    "pc": [
+      1037,
+      1038,
+      1039
+    ]
+  },
+  {
+    "teal": 1072,
+    "source": "contracts\\LimitOrder.algo.ts:131",
+    "pc": [
+      1040
+    ]
+  },
+  {
+    "teal": 1073,
+    "source": "contracts\\LimitOrder.algo.ts:131",
+    "pc": [
+      1041
+    ]
+  },
+  {
+    "teal": 1074,
+    "source": "contracts\\LimitOrder.algo.ts:131",
+    "pc": [
+      1042,
+      1043
+    ]
+  },
+  {
+    "teal": 1078,
+    "source": "contracts\\LimitOrder.algo.ts:126",
+    "pc": [
+      1044,
+      1045
+    ]
+  },
+  {
+    "teal": 1079,
+    "source": "contracts\\LimitOrder.algo.ts:126",
+    "pc": [
+      1046
+    ]
+  },
+  {
+    "teal": 1082,
+    "source": "contracts\\LimitOrder.algo.ts:126",
+    "errorMessage": "box value does not exist: this.orders(orderId).value",
+    "pc": [
+      1047
+    ]
+  },
+  {
+    "teal": 1083,
+    "source": "contracts\\LimitOrder.algo.ts:131",
+    "pc": [
+      1048,
+      1049
+    ]
+  },
+  {
+    "teal": 1084,
+    "source": "contracts\\LimitOrder.algo.ts:131",
+    "pc": [
+      1050,
+      1051
+    ]
+  },
+  {
+    "teal": 1085,
+    "source": "contracts\\LimitOrder.algo.ts:131",
+    "pc": [
+      1052,
+      1053,
+      1054
+    ]
+  },
+  {
+    "teal": 1086,
+    "source": "contracts\\LimitOrder.algo.ts:131",
+    "pc": [
+      1055,
+      1056
+    ]
+  },
+  {
+    "teal": 1090,
+    "source": "contracts\\LimitOrder.algo.ts:131",
+    "pc": [
+      1057,
+      1058
+    ]
+  },
+  {
+    "teal": 1091,
+    "source": "contracts\\LimitOrder.algo.ts:131",
+    "pc": [
+      1059,
+      1060
+    ]
+  },
+  {
+    "teal": 1094,
+    "source": "contracts\\LimitOrder.algo.ts:131",
+    "pc": [
+      1061
+    ]
+  },
+  {
+    "teal": 1095,
+    "source": "contracts\\LimitOrder.algo.ts:131",
+    "pc": [
+      1062,
+      1063
+    ]
+  },
+  {
+    "teal": 1098,
+    "source": "contracts\\LimitOrder.algo.ts:131",
+    "pc": [
+      1064
+    ]
+  },
+  {
+    "teal": 1099,
+    "source": "contracts\\LimitOrder.algo.ts:124",
+    "pc": [
+      1065
+    ]
+  },
+  {
+    "teal": 1103,
+    "source": "contracts\\LimitOrder.algo.ts:134",
+    "pc": [
+      1066,
+      1067,
+      1068
+    ]
+  },
+  {
+    "teal": 1108,
+    "source": "contracts\\LimitOrder.algo.ts:135",
+    "pc": [
+      1069,
+      1070
+    ]
+  },
+  {
+    "teal": 1109,
+    "source": "contracts\\LimitOrder.algo.ts:135",
+    "pc": [
+      1071
+    ]
+  },
+  {
+    "teal": 1110,
+    "source": "contracts\\LimitOrder.algo.ts:135",
+    "pc": [
+      1072
+    ]
+  },
+  {
+    "teal": 1111,
+    "source": "contracts\\LimitOrder.algo.ts:135",
+    "pc": [
+      1073,
+      1074,
+      1075
+    ]
+  },
+  {
+    "teal": 1116,
+    "source": "contracts\\LimitOrder.algo.ts:136",
+    "pc": [
+      1076
+    ]
+  },
+  {
+    "teal": 1117,
+    "source": "contracts\\LimitOrder.algo.ts:136",
+    "pc": [
+      1077
+    ]
+  },
+  {
+    "teal": 1118,
+    "source": "contracts\\LimitOrder.algo.ts:136",
+    "pc": [
+      1078,
+      1079
+    ]
+  },
+  {
+    "teal": 1122,
+    "source": "contracts\\LimitOrder.algo.ts:136",
+    "pc": [
+      1080,
+      1081
+    ]
+  },
+  {
+    "teal": 1123,
+    "source": "contracts\\LimitOrder.algo.ts:136",
+    "pc": [
+      1082,
+      1083
+    ]
+  },
+  {
+    "teal": 1127,
+    "source": "contracts\\LimitOrder.algo.ts:136",
+    "pc": [
+      1084,
+      1085
+    ]
+  },
+  {
+    "teal": 1128,
+    "source": "contracts\\LimitOrder.algo.ts:136",
+    "pc": [
+      1086,
+      1087
+    ]
+  },
+  {
+    "teal": 1131,
+    "source": "contracts\\LimitOrder.algo.ts:136",
+    "pc": [
+      1088
+    ]
+  },
+  {
+    "teal": 1132,
+    "source": "contracts\\LimitOrder.algo.ts:136",
+    "pc": [
+      1089,
+      1090
+    ]
+  },
+  {
+    "teal": 1135,
+    "source": "contracts\\LimitOrder.algo.ts:136",
+    "pc": [
+      1091
+    ]
+  },
+  {
+    "teal": 1136,
+    "source": "contracts\\LimitOrder.algo.ts:135",
+    "pc": [
+      1092,
+      1093,
+      1094
+    ]
+  },
+  {
+    "teal": 1145,
+    "source": "contracts\\LimitOrder.algo.ts:138",
+    "pc": [
+      1095
+    ]
+  },
+  {
+    "teal": 1146,
+    "source": "contracts\\LimitOrder.algo.ts:138",
+    "pc": [
+      1096
+    ]
+  },
+  {
+    "teal": 1147,
+    "source": "contracts\\LimitOrder.algo.ts:138",
+    "pc": [
+      1097,
+      1098
+    ]
+  },
+  {
+    "teal": 1151,
+    "source": "contracts\\LimitOrder.algo.ts:139",
+    "pc": [
+      1099,
+      1100
+    ]
+  },
+  {
+    "teal": 1152,
+    "source": "contracts\\LimitOrder.algo.ts:139",
+    "pc": [
+      1101,
+      1102
+    ]
+  },
+  {
+    "teal": 1156,
+    "source": "contracts\\LimitOrder.algo.ts:140",
+    "pc": [
+      1103,
+      1104
+    ]
+  },
+  {
+    "teal": 1157,
+    "source": "contracts\\LimitOrder.algo.ts:140",
+    "pc": [
+      1105,
+      1106
+    ]
+  },
+  {
+    "teal": 1161,
+    "source": "contracts\\LimitOrder.algo.ts:141",
+    "pc": [
+      1107,
+      1108
+    ]
+  },
+  {
+    "teal": 1162,
+    "source": "contracts\\LimitOrder.algo.ts:141",
+    "pc": [
+      1109,
+      1110
+    ]
+  },
+  {
+    "teal": 1165,
+    "source": "contracts\\LimitOrder.algo.ts:138",
+    "pc": [
+      1111
+    ]
+  },
+  {
+    "teal": 1166,
+    "source": "contracts\\LimitOrder.algo.ts:138",
+    "pc": [
+      1112,
+      1113
+    ]
+  },
+  {
+    "teal": 1169,
+    "source": "contracts\\LimitOrder.algo.ts:138",
+    "pc": [
+      1114
+    ]
+  },
+  {
+    "teal": 1172,
+    "source": "contracts\\LimitOrder.algo.ts:134",
+    "pc": [
+      1115
+    ]
+  },
+  {
+    "teal": 1175,
+    "source": "contracts\\LimitOrder.algo.ts:16",
+    "pc": [
+      1116,
+      1117,
+      1118,
+      1119,
+      1120,
+      1121
+    ]
+  },
+  {
+    "teal": 1176,
+    "source": "contracts\\LimitOrder.algo.ts:16",
+    "pc": [
+      1122,
+      1123,
+      1124
+    ]
+  },
+  {
+    "teal": 1177,
+    "source": "contracts\\LimitOrder.algo.ts:16",
+    "pc": [
+      1125,
+      1126,
+      1127,
+      1128
+    ]
+  },
+  {
+    "teal": 1180,
+    "source": "contracts\\LimitOrder.algo.ts:16",
+    "errorMessage": "this contract does not implement the given ABI method for create NoOp",
+    "pc": [
+      1129
+    ]
+  },
+  {
+    "teal": 1183,
+    "source": "contracts\\LimitOrder.algo.ts:16",
+    "pc": [
+      1130,
+      1131,
+      1132,
+      1133,
+      1134,
+      1135
+    ]
+  },
+  {
+    "teal": 1184,
+    "source": "contracts\\LimitOrder.algo.ts:16",
+    "pc": [
+      1136,
+      1137,
+      1138,
+      1139,
+      1140,
+      1141
+    ]
+  },
+  {
+    "teal": 1185,
+    "source": "contracts\\LimitOrder.algo.ts:16",
+    "pc": [
+      1142,
+      1143,
+      1144,
+      1145,
+      1146,
+      1147
+    ]
+  },
+  {
+    "teal": 1186,
+    "source": "contracts\\LimitOrder.algo.ts:16",
+    "pc": [
+      1148,
+      1149,
+      1150,
+      1151,
+      1152,
+      1153
+    ]
+  },
+  {
+    "teal": 1187,
+    "source": "contracts\\LimitOrder.algo.ts:16",
+    "pc": [
+      1154,
+      1155,
+      1156,
+      1157,
+      1158,
+      1159
+    ]
+  },
+  {
+    "teal": 1188,
+    "source": "contracts\\LimitOrder.algo.ts:16",
+    "pc": [
+      1160,
+      1161,
+      1162
+    ]
+  },
+  {
+    "teal": 1189,
+    "source": "contracts\\LimitOrder.algo.ts:16",
+    "pc": [
+      1163,
+      1164,
+      1165,
+      1166,
+      1167,
+      1168,
+      1169,
+      1170,
+      1171,
+      1172,
+      1173,
+      1174
+    ]
+  },
+  {
+    "teal": 1192,
+    "source": "contracts\\LimitOrder.algo.ts:16",
+    "errorMessage": "this contract does not implement the given ABI method for call NoOp",
+    "pc": [
+      1175
+    ]
+  }
+]
