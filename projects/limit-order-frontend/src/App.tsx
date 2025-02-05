@@ -1,57 +1,715 @@
-import { DeflyWalletConnect } from '@blockshake/defly-connect'
-import { DaffiWalletConnect } from '@daffiwallet/connect'
-import { PeraWalletConnect } from '@perawallet/connect'
-import { PROVIDER_ID, ProvidersArray, WalletProvider, useInitializeProviders } from '@txnlab/use-wallet'
-import algosdk from 'algosdk'
-import { SnackbarProvider } from 'notistack'
-import Home from './Home'
-import { getAlgodConfigFromViteEnvironment, getKmdConfigFromViteEnvironment } from './utils/network/getAlgoClientConfigs'
+import { Header } from "./components/Header";
+import { CreateOrder } from "./components/CreateOrder";
+import { useWallet } from "@txnlab/use-wallet-react";
+import { ReactElement, useEffect, useState } from "react";
+import { getAccountAlgo, getAssetDetails, getAssetsInAddress } from "./utils";
+import { AssetDetails } from "./interfaces";
+const userasas: AssetDetails[] = [
+  {
+    assetId: 0,
+    amount: 62.490981,
+    orgAmount: 62490981,
+    decimals: 6,
+    name: "Algorand",
+    unitName: "ALGO",
+  },
+  {
+    assetId: 628957196,
+    amount: 8884,
+    orgAmount: 88840000000,
+    decimals: 7,
+    name: "HOT",
+    unitName: "HOT",
+  },
+  {
+    assetId: 628958865,
+    amount: 8870,
+    orgAmount: 8870000,
+    decimals: 3,
+    name: "HOT",
+    unitName: "HOT",
+  },
+  {
+    assetId: 629094392,
+    amount: 1,
+    orgAmount: 1,
+    decimals: 0,
+    name: "asset",
+    unitName: "unit",
+  },
+  {
+    assetId: 629114126,
+    amount: 5,
+    orgAmount: 500,
+    decimals: 2,
+    name: "REJOLT",
+    unitName: "RT",
+  },
+  {
+    assetId: 629115179,
+    amount: 2,
+    orgAmount: 2,
+    decimals: 0,
+    name: "TestNFT",
+    unitName: "TNFT",
+  },
+  {
+    assetId: 629346208,
+    amount: 0.002,
+    orgAmount: 2,
+    decimals: 3,
+    name: "sdc",
+    unitName: "sd",
+  },
+  {
+    assetId: 629468819,
+    amount: 2,
+    orgAmount: 20000,
+    decimals: 4,
+    name: "Satish",
+    unitName: "sat",
+  },
+  {
+    assetId: 638809877,
+    amount: 12,
+    orgAmount: 12000,
+    decimals: 3,
+    name: "JNTU HYDERABAD",
+    unitName: "JNTUH",
+  },
+  {
+    assetId: 659202997,
+    amount: 1,
+    orgAmount: 1,
+    decimals: 0,
+    name: "stupidhorse",
+    unitName: "horse",
+  },
+  {
+    assetId: 677469584,
+    amount: 1,
+    orgAmount: 1,
+    decimals: 0,
+    name: "asa #1",
+    unitName: "asa",
+  },
+  {
+    assetId: 677469595,
+    amount: 1,
+    orgAmount: 1,
+    decimals: 0,
+    name: "asa #2",
+    unitName: "asa",
+  },
+  {
+    assetId: 677469597,
+    amount: 1,
+    orgAmount: 1,
+    decimals: 0,
+    name: "asa #3",
+    unitName: "asa",
+  },
+  {
+    assetId: 677469599,
+    amount: 1,
+    orgAmount: 1,
+    decimals: 0,
+    name: "asa #4",
+    unitName: "asa",
+  },
+  {
+    assetId: 677469601,
+    amount: 1,
+    orgAmount: 1,
+    decimals: 0,
+    name: "asa #5",
+    unitName: "asa",
+  },
+  {
+    assetId: 677469603,
+    amount: 1,
+    orgAmount: 1,
+    decimals: 0,
+    name: "asa #6",
+    unitName: "asa",
+  },
+  {
+    assetId: 677469605,
+    amount: 1,
+    orgAmount: 1,
+    decimals: 0,
+    name: "asa #7",
+    unitName: "asa",
+  },
+  {
+    assetId: 677469607,
+    amount: 1,
+    orgAmount: 1,
+    decimals: 0,
+    name: "asa #8",
+    unitName: "asa",
+  },
+  {
+    assetId: 677469611,
+    amount: 1,
+    orgAmount: 1,
+    decimals: 0,
+    name: "asa #9",
+    unitName: "asa",
+  },
+  {
+    assetId: 677469613,
+    amount: 0,
+    orgAmount: 0,
+    decimals: 0,
+    name: "asa #10",
+    unitName: "asa",
+  },
+  {
+    assetId: 677469615,
+    amount: 1,
+    orgAmount: 1,
+    decimals: 0,
+    name: "asa #11",
+    unitName: "asa",
+  },
+  {
+    assetId: 677469617,
+    amount: 1,
+    orgAmount: 1,
+    decimals: 0,
+    name: "asa #12",
+    unitName: "asa",
+  },
+  {
+    assetId: 677469619,
+    amount: 1,
+    orgAmount: 1,
+    decimals: 0,
+    name: "asa #13",
+    unitName: "asa",
+  },
+  {
+    assetId: 677469621,
+    amount: 1,
+    orgAmount: 1,
+    decimals: 0,
+    name: "asa #14",
+    unitName: "asa",
+  },
+  {
+    assetId: 677469623,
+    amount: 1,
+    orgAmount: 1,
+    decimals: 0,
+    name: "asa #15",
+    unitName: "asa",
+  },
+  {
+    assetId: 677469625,
+    amount: 1,
+    orgAmount: 1,
+    decimals: 0,
+    name: "asa #16",
+    unitName: "asa",
+  },
+  {
+    assetId: 677469627,
+    amount: 1,
+    orgAmount: 1,
+    decimals: 0,
+    name: "asa #17",
+    unitName: "asa",
+  },
+  {
+    assetId: 677469629,
+    amount: 1,
+    orgAmount: 1,
+    decimals: 0,
+    name: "asa #18",
+    unitName: "asa",
+  },
+  {
+    assetId: 677469631,
+    amount: 1,
+    orgAmount: 1,
+    decimals: 0,
+    name: "asa #19",
+    unitName: "asa",
+  },
+  {
+    assetId: 677469634,
+    amount: 1,
+    orgAmount: 1,
+    decimals: 0,
+    name: "asa #20",
+    unitName: "asa",
+  },
+  {
+    assetId: 677469636,
+    amount: 1,
+    orgAmount: 1,
+    decimals: 0,
+    name: "asa #21",
+    unitName: "asa",
+  },
+  {
+    assetId: 677469638,
+    amount: 1,
+    orgAmount: 1,
+    decimals: 0,
+    name: "asa #22",
+    unitName: "asa",
+  },
+  {
+    assetId: 677469640,
+    amount: 1,
+    orgAmount: 1,
+    decimals: 0,
+    name: "asa #23",
+    unitName: "asa",
+  },
+  {
+    assetId: 677469643,
+    amount: 1,
+    orgAmount: 1,
+    decimals: 0,
+    name: "asa #24",
+    unitName: "asa",
+  },
+  {
+    assetId: 681402235,
+    amount: 998,
+    orgAmount: 99800,
+    decimals: 2,
+    name: "satish",
+    unitName: "st",
+  },
+  {
+    assetId: 683444110,
+    amount: 99,
+    orgAmount: 99,
+    decimals: 0,
+    name: "workshop nft",
+    unitName: "wnft",
+  },
+  {
+    assetId: 720485937,
+    amount: 0,
+    orgAmount: 0,
+    decimals: 0,
+    name: "CTFLAG ",
+    unitName: "CTF2",
+  },
+  {
+    assetId: 722499831,
+    amount: 1,
+    orgAmount: 1,
+    decimals: 0,
+    name: "Algorand Education Badge #003",
+    unitName: "AEB1",
+  },
+  {
+    assetId: 722500148,
+    amount: 1,
+    orgAmount: 1,
+    decimals: 0,
+    name: "Algorand Education Badge #004",
+    unitName: "AEB1",
+  },
+  {
+    assetId: 722500455,
+    amount: 1,
+    orgAmount: 1,
+    decimals: 0,
+    name: "Algorand Education Badge #005",
+    unitName: "AEB1",
+  },
+  {
+    assetId: 722500875,
+    amount: 1,
+    orgAmount: 1,
+    decimals: 0,
+    name: "Algorand Education Badge #006",
+    unitName: "AEB1",
+  },
+  {
+    assetId: 722649319,
+    amount: 1,
+    orgAmount: 1,
+    decimals: 0,
+    name: "Algorand Education Badge #001",
+    unitName: "AEB1",
+  },
+  {
+    assetId: 722649486,
+    amount: 16,
+    orgAmount: 16000000,
+    decimals: 6,
+    name: "POMA",
+    unitName: "POMA",
+  },
+  {
+    assetId: 722651759,
+    amount: 71,
+    orgAmount: 71000000,
+    decimals: 6,
+    name: "POMA",
+    unitName: "POMA",
+  },
+  {
+    assetId: 723284532,
+    amount: 1,
+    orgAmount: 1,
+    decimals: 0,
+    name: "Algorand Education Badge #003",
+    unitName: "AEB1",
+  },
+  {
+    assetId: 727247524,
+    amount: 4,
+    orgAmount: 4,
+    decimals: 0,
+    name: "TEDxVJIT Volunteer Badge",
+    unitName: "TEDxVJIT",
+  },
+  {
+    assetId: 727247725,
+    amount: 4,
+    orgAmount: 4,
+    decimals: 0,
+    name: "TEDxVJIT Volunteer Badge",
+    unitName: "TEDxVJIT",
+  },
+  {
+    assetId: 727249402,
+    amount: 4,
+    orgAmount: 4,
+    decimals: 0,
+    name: "TEDxVJIT Volunteer Badge",
+    unitName: "TEDxVJIT",
+  },
+  {
+    assetId: 727249606,
+    amount: 4,
+    orgAmount: 4,
+    decimals: 0,
+    name: "TEDxVJIT Volunteer Badge",
+    unitName: "TEDxVJIT",
+  },
+  {
+    assetId: 727257464,
+    amount: 2,
+    orgAmount: 2,
+    decimals: 0,
+    name: "TEDxVJIT Volunteer Badge",
+    unitName: "TEDxVJIT",
+  },
+  {
+    assetId: 728284808,
+    amount: 30,
+    orgAmount: 30,
+    decimals: 0,
+    name: "TEDxVJIT 2024 Volunteer Badge",
+    unitName: "TEDxVJIT",
+  },
+  {
+    assetId: 728285350,
+    amount: 30,
+    orgAmount: 30,
+    decimals: 0,
+    name: "TEDxVJIT 2024 Volunteer Badge",
+    unitName: "TEDxVJIT",
+  },
+  {
+    assetId: 728288946,
+    amount: 30,
+    orgAmount: 30,
+    decimals: 0,
+    name: "TEDxVJIT 2024 Volunteer Badge",
+    unitName: "TEDxVJIT",
+  },
+  {
+    assetId: 728289172,
+    amount: 30,
+    orgAmount: 30,
+    decimals: 0,
+    name: "TEDxVJIT 2024 Volunteer Badge",
+    unitName: "TEDxVJIT",
+  },
+  {
+    assetId: 728299666,
+    amount: 30,
+    orgAmount: 30,
+    decimals: 0,
+    name: "TEDxVJIT 2024 Volunteer Badge",
+    unitName: "TEDxVJIT",
+  },
+  {
+    assetId: 728299727,
+    amount: 30,
+    orgAmount: 30,
+    decimals: 0,
+    name: "TEDxVJIT 2024 Volunteer Badge",
+    unitName: "TEDxVJIT",
+  },
+  {
+    assetId: 728328078,
+    amount: 18,
+    orgAmount: 18,
+    decimals: 0,
+    name: "TEDxVJIT 2024 Volunteer Badge",
+    unitName: "TEDxVJIT",
+  },
+  {
+    assetId: 730447417,
+    amount: 1,
+    orgAmount: 1,
+    decimals: 0,
+    name: "AIS_CU",
+    unitName: "Custodia",
+  },
+  {
+    assetId: 730447569,
+    amount: 1,
+    orgAmount: 1,
+    decimals: 0,
+    name: "AIS_TO",
+    unitName: "Tokeniz",
+  },
+  {
+    assetId: 730447632,
+    amount: 1,
+    orgAmount: 1,
+    decimals: 0,
+    name: "AIS_DF",
+    unitName: "DeFi",
+  },
+  {
+    assetId: 730447683,
+    amount: 1,
+    orgAmount: 1,
+    decimals: 0,
+    name: "AIS_LS",
+    unitName: "LiquidS",
+  },
+  {
+    assetId: 730447769,
+    amount: 1,
+    orgAmount: 1,
+    decimals: 0,
+    name: "AIS_BA",
+    unitName: "Analytic",
+  },
+  {
+    assetId: 730447860,
+    amount: 1,
+    orgAmount: 1,
+    decimals: 0,
+    name: "AIS_ANV",
+    unitName: "Anveshak",
+  },
+  {
+    assetId: 730447929,
+    amount: 1,
+    orgAmount: 1,
+    decimals: 0,
+    name: "AIS_ARV",
+    unitName: "ARVO",
+  },
+  {
+    assetId: 730448567,
+    amount: 1,
+    orgAmount: 1,
+    decimals: 0,
+    name: "AIS_AST",
+    unitName: "Astrix",
+  },
+  {
+    assetId: 730448650,
+    amount: 1,
+    orgAmount: 1,
+    decimals: 0,
+    name: "AIS_AXI",
+    unitName: "Automaxi",
+  },
+  {
+    assetId: 730448771,
+    amount: 1,
+    orgAmount: 1,
+    decimals: 0,
+    name: "AIS_DAV",
+    unitName: "David",
+  },
+  {
+    assetId: 730448891,
+    amount: 1,
+    orgAmount: 1,
+    decimals: 0,
+    name: "AIS_FILM",
+    unitName: "FilmFina",
+  },
+  {
+    assetId: 730449101,
+    amount: 1,
+    orgAmount: 1,
+    decimals: 0,
+    name: "AIS_LW3",
+    unitName: "LW3",
+  },
+  {
+    assetId: 730449146,
+    amount: 1,
+    orgAmount: 1,
+    decimals: 0,
+    name: "AIS_MINI",
+    unitName: "MiniLand",
+  },
+  {
+    assetId: 730449367,
+    amount: 1,
+    orgAmount: 1,
+    decimals: 0,
+    name: "AIS_REN",
+    unitName: "Renai",
+  },
+  {
+    assetId: 730449436,
+    amount: 1,
+    orgAmount: 1,
+    decimals: 0,
+    name: "AIS_TER",
+    unitName: "Terano",
+  },
+  {
+    assetId: 730449517,
+    amount: 1,
+    orgAmount: 1,
+    decimals: 0,
+    name: "AIS_SED",
+    unitName: "SecureDa",
+  },
+  {
+    assetId: 730449581,
+    amount: 1,
+    orgAmount: 1,
+    decimals: 0,
+    name: "AIS_EAR",
+    unitName: "EarlyChk",
+  },
+  {
+    assetId: 730449637,
+    amount: 1,
+    orgAmount: 1,
+    decimals: 0,
+    name: "AIS_BVP",
+    unitName: "BSTVideo",
+  },
+  {
+    assetId: 730449730,
+    amount: 1,
+    orgAmount: 1,
+    decimals: 0,
+    name: "AIS_ABC",
+    unitName: "ABCStar",
+  },
+  {
+    assetId: 730493878,
+    amount: 1,
+    orgAmount: 1,
+    decimals: 0,
+    name: "Algorand India Summit Finalists",
+    unitName: "AISF2024",
+  },
+  {
+    assetId: 730803426,
+    amount: 33,
+    orgAmount: 33,
+    decimals: 0,
+    name: "TEDxSVECW 2024 Volunteer Badge",
+    unitName: "TEDSVECW",
+  },
+  {
+    assetId: 730803616,
+    amount: 33,
+    orgAmount: 33,
+    decimals: 0,
+    name: "TEDxSVECW 2024 Volunteer Badge",
+    unitName: "TEDSVECW",
+  },
+  {
+    assetId: 730803685,
+    amount: 26,
+    orgAmount: 26,
+    decimals: 0,
+    name: "TEDxSVECW 2024 Volunteer Badge",
+    unitName: "TEDSVECW",
+  },
+  {
+    assetId: 732071363,
+    amount: 999990,
+    orgAmount: 999990000,
+    decimals: 3,
+    name: "SVECW Token",
+    unitName: "SVECW",
+  },
+  {
+    assetId: 732944107,
+    amount: 9900,
+    orgAmount: 9900,
+    decimals: 0,
+    name: "Bitcoin",
+    unitName: "BTC",
+  },
+];
+function App() {
+  const { activeAccount } = useWallet();
+  const [userAssets, setUserAssets] = useState<AssetDetails[]>(userasas);
+  const [createOrderMessage, setCreateOrderMessage] = useState<ReactElement>();
 
-let providersArray: ProvidersArray
-if (import.meta.env.VITE_ALGOD_NETWORK === '') {
-  const kmdConfig = getKmdConfigFromViteEnvironment()
-  providersArray = [
-    {
-      id: PROVIDER_ID.KMD,
-      clientOptions: {
-        wallet: kmdConfig.wallet,
-        password: kmdConfig.password,
-        host: kmdConfig.server,
-        token: String(kmdConfig.token),
-        port: String(kmdConfig.port),
-      },
-    },
-  ]
-} else {
-  providersArray = [
-    { id: PROVIDER_ID.DEFLY, clientStatic: DeflyWalletConnect },
-    { id: PROVIDER_ID.PERA, clientStatic: PeraWalletConnect },
-    { id: PROVIDER_ID.DAFFI, clientStatic: DaffiWalletConnect },
-    { id: PROVIDER_ID.EXODUS },
-    // If you are interested in WalletConnect v2 provider
-    // refer to https://github.com/TxnLab/use-wallet for detailed integration instructions
-  ]
-}
+  useEffect(() => {
+    async function getUserAssets(address: string) {
+      setCreateOrderMessage(
+        <>
+          <div className="text-white text-lg font-medium">Fetching Your Assets...</div>
+        </>
+      );
+      let assets = await getAssetsInAddress(address);
+      let finalAssets: AssetDetails[] = [];
+      for (let i = 0; i < assets.length; i++) {
+        const asset = assets[i];
+        const assetDetails = await getAssetDetails(asset);
+        finalAssets.push(assetDetails);
+        await new Promise((resolve) => setTimeout(resolve, 10));
+      }
+      const algo = await getAccountAlgo(address);
+      finalAssets = [algo, ...finalAssets];
+      setUserAssets(finalAssets);
+      console.log(finalAssets);
+      setCreateOrderMessage(undefined);
+    }
 
-export default function App() {
-  const algodConfig = getAlgodConfigFromViteEnvironment()
-
-  const walletProviders = useInitializeProviders({
-    providers: providersArray,
-    nodeConfig: {
-      network: algodConfig.network,
-      nodeServer: algodConfig.server,
-      nodePort: String(algodConfig.port),
-      nodeToken: String(algodConfig.token),
-    },
-    algosdkStatic: algosdk,
-  })
-
+    if (activeAccount) {
+      // getUserAssets(activeAccount.address);
+    } else {
+      setCreateOrderMessage(
+        <>
+          <div className="text-red-500 text-lg font-medium">Please connect your wallet to create an order</div>
+        </>
+      );
+    }
+  }, [activeAccount]);
   return (
-    <SnackbarProvider maxSnack={3}>
-      <WalletProvider value={walletProviders}>
-        <Home />
-      </WalletProvider>
-    </SnackbarProvider>
-  )
+    <div className="min-h-screen bg-[#1a1b1f] flex items-center justify-center p-4">
+      <div className="w-full max-w-md">
+        {/* Header */}
+        <Header />
+
+        {/* Create Order Card */}
+        <CreateOrder assets={userAssets} message={createOrderMessage} />
+      </div>
+    </div>
+  );
 }
+
+export default App;
