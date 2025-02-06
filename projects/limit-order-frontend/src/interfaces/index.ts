@@ -9,3 +9,16 @@ export interface AssetDetails extends AssetHolding {
   name: string;
   unitName: string;
 }
+
+export interface LimitOrder {
+  id: BigInt;
+  owner: string;
+  givingAsset: AssetDetails;
+  takingAsset: AssetDetails;
+  givingAmount: BigInt;
+  takingAmount: BigInt;
+  completed: boolean;
+  ownerClaimed: boolean;
+  canAbleToBuy: boolean;
+  isOwner: boolean;
+}

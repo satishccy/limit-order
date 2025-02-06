@@ -2,8 +2,15 @@ import { Header } from "./components/Header";
 import { CreateOrder } from "./components/CreateOrder";
 import { useWallet } from "@txnlab/use-wallet-react";
 import { ReactElement, useEffect, useState } from "react";
-import { getAccountAlgo, getAssetDetails, getAssetsInAddress } from "./utils";
-import { AssetDetails } from "./interfaces";
+import { getAccountAlgo, getAssetDetails, getAssetsInAddress, isOptedInToAsset } from "./utils";
+import { AssetDetails, LimitOrder } from "./interfaces";
+import { LimitOrderClient } from "./contracts/LimitOrder";
+import { appAddress, appId } from "./utils/constants";
+import * as algokit from "@algorandfoundation/algokit-utils";
+import { ListFilter } from "lucide-react";
+import { get } from "http";
+import { toast } from "react-toastify";
+import algosdk from "algosdk";
 const userasas: AssetDetails[] = [
   {
     assetId: 0,
@@ -662,51 +669,409 @@ const userasas: AssetDetails[] = [
     unitName: "BTC",
   },
 ];
+
 function App() {
-  const { activeAccount } = useWallet();
-  const [userAssets, setUserAssets] = useState<AssetDetails[]>(userasas);
+  const { activeAccount, transactionSigner } = useWallet();
+  const [userAssets, setUserAssets] = useState<AssetDetails[]>([]);
   const [createOrderMessage, setCreateOrderMessage] = useState<ReactElement>();
+  const [limitOrders, setLimitOrders] = useState<LimitOrder[]>([]);
+  const [showMyOrders, setShowMyOrders] = useState(false);
+  const [loadingOrdersMessage, setLoadingOrdersMessage] = useState("");
+
+  async function getUserAssets(address: string) {
+    setCreateOrderMessage(
+      <>
+        <div className="text-white text-lg font-medium">Fetching Your Assets...</div>
+      </>
+    );
+    let assets = await getAssetsInAddress(address);
+    let finalAssets: AssetDetails[] = [];
+    for (let i = 0; i < assets.length; i++) {
+      const asset = assets[i];
+      const assetDetails = await getAssetDetails(asset);
+      finalAssets.push(assetDetails);
+      setCreateOrderMessage(
+        <>
+          <div className="flex flex-col items-center">
+            <div className="text-white text-lg font-medium">Fetching Your Assets...</div>
+            <div className="text-white text-lg font-medium justify-center">
+              {i + 1}/{assets.length} fetched{" "}
+            </div>
+          </div>
+        </>
+      );
+      await new Promise((resolve) => setTimeout(resolve, 10));
+    }
+    const algo = await getAccountAlgo(address);
+    finalAssets = [algo, ...finalAssets];
+    setUserAssets(finalAssets);
+    console.log(finalAssets);
+    setCreateOrderMessage(undefined);
+    return finalAssets;
+  }
+
+  async function getOrders(assets: AssetDetails[]) {
+    setLoadingOrdersMessage("Fetching Orders...");
+    try {
+      const appClient = new LimitOrderClient({ appId: BigInt(appId), algorand: algokit.AlgorandClient.testNet() });
+      const orders = await appClient.state.box.orders.getMap();
+      const finalOrders: LimitOrder[] = [];
+      for (const [key, value] of orders.entries()) {
+        const givingAssetBalance = assets.find((asset) => asset.assetId === Number(value.givingAsset));
+        const givingAsset =
+          Number(value.givingAsset) !== 0
+            ? givingAssetBalance
+              ? givingAssetBalance
+              : await getAssetDetails({
+                  assetId: Number(value.givingAsset),
+                  orgAmount: 0,
+                })
+            : givingAssetBalance
+            ? givingAssetBalance
+            : { assetId: 0, amount: 0, orgAmount: 0, decimals: 6, name: "Algorand", unitName: "ALGO" };
+        const takingAssetBalance = assets.find((asset) => asset.assetId === Number(value.takingAsset));
+        const takingAsset =
+          Number(value.takingAsset) !== 0
+            ? takingAssetBalance
+              ? takingAssetBalance
+              : await getAssetDetails({
+                  assetId: Number(value.takingAsset),
+                  orgAmount: 0,
+                })
+            : takingAssetBalance
+            ? takingAssetBalance
+            : { assetId: 0, amount: 0, orgAmount: 0, decimals: 6, name: "Algorand", unitName: "ALGO" };
+        const order: LimitOrder = {
+          id: key,
+          owner: value.owner,
+          givingAsset,
+          takingAsset,
+          givingAmount: value.givingAmount,
+          takingAmount: value.takingAmount,
+          completed: value.completed,
+          ownerClaimed: value.ownerClaimed,
+          canAbleToBuy: value.takingAmount <= takingAsset.orgAmount,
+          isOwner: activeAccount ? value.owner === activeAccount.address : false,
+        };
+        finalOrders.push(order);
+      }
+      setLimitOrders(finalOrders);
+      setLoadingOrdersMessage("");
+      if (finalOrders.length === 0) {
+        setLoadingOrdersMessage("No Orders Found");
+      }
+      console.log(finalOrders);
+    } catch (e: any) {
+      console.log(e);
+      toast.error(`Error Fetching Orders: ${e.message}`);
+      setLoadingOrdersMessage("Error Fetching Orders");
+    }
+  }
 
   useEffect(() => {
-    async function getUserAssets(address: string) {
-      setCreateOrderMessage(
-        <>
-          <div className="text-white text-lg font-medium">Fetching Your Assets...</div>
-        </>
-      );
-      let assets = await getAssetsInAddress(address);
+    (async () => {
       let finalAssets: AssetDetails[] = [];
-      for (let i = 0; i < assets.length; i++) {
-        const asset = assets[i];
-        const assetDetails = await getAssetDetails(asset);
-        finalAssets.push(assetDetails);
-        await new Promise((resolve) => setTimeout(resolve, 10));
+      if (activeAccount) {
+        finalAssets = await getUserAssets(activeAccount.address);
+      } else {
+        setCreateOrderMessage(
+          <>
+            <div className="text-red-500 text-lg font-medium">Please connect your wallet to create an order</div>
+          </>
+        );
       }
-      const algo = await getAccountAlgo(address);
-      finalAssets = [algo, ...finalAssets];
-      setUserAssets(finalAssets);
-      console.log(finalAssets);
-      setCreateOrderMessage(undefined);
-    }
-
-    if (activeAccount) {
-      // getUserAssets(activeAccount.address);
-    } else {
-      setCreateOrderMessage(
-        <>
-          <div className="text-red-500 text-lg font-medium">Please connect your wallet to create an order</div>
-        </>
-      );
-    }
+      await getOrders(finalAssets);
+    })();
   }, [activeAccount]);
+
+  const filteredOrders = showMyOrders ? limitOrders.filter((order) => order.isOwner) : limitOrders;
+
+  const handleClaimOrder = async (e: React.MouseEvent<HTMLButtonElement>, order: LimitOrder) => {
+    console.log("Claiming order:", order);
+    if (!activeAccount) {
+      toast.error("Please connect your wallet to cancel the order");
+      return;
+    }
+    const button = e.currentTarget;
+    button.disabled = true;
+    button.textContent = "Claming...";
+    try {
+      const appClient = new LimitOrderClient({ appId: BigInt(appId), algorand: algokit.AlgorandClient.testNet() });
+      let extraFees = 0.001;
+      const isOwnerOptedIn =
+        order.takingAsset.assetId === 0 ? true : await isOptedInToAsset(order.owner, Number(order.takingAsset.assetId));
+      if (isOwnerOptedIn) {
+        extraFees += 0.001;
+      }
+      const composer = appClient.newGroup();
+      let assetSendTxn: algosdk.Transaction;
+      if (order.takingAsset.assetId === 0) {
+        assetSendTxn = algosdk.makePaymentTxnWithSuggestedParamsFromObject({
+          from: activeAccount.address,
+          to: appAddress,
+          amount: Number(order.takingAmount),
+          suggestedParams: await appClient.algorand.client.algod.getTransactionParams().do(),
+        });
+      } else {
+        assetSendTxn = algosdk.makeAssetTransferTxnWithSuggestedParamsFromObject({
+          from: activeAccount.address,
+          to: appAddress,
+          amount: Number(order.takingAmount),
+          assetIndex: Number(order.takingAsset.assetId),
+          suggestedParams: await appClient.algorand.client.algod.getTransactionParams().do(),
+        });
+      }
+      const isContractOptedToSendAsset =
+        order.takingAsset.assetId == 0 ? true : await isOptedInToAsset(appAddress, order.takingAsset.assetId);
+      if (!isContractOptedToSendAsset) {
+        composer.optInToAsset({
+          args: {
+            assetId: order.takingAsset.assetId,
+            mbrTxn: {
+              txn: algosdk.makePaymentTxnWithSuggestedParamsFromObject({
+                from: activeAccount.address,
+                to: appAddress,
+                amount: algokit.algos(0.1).microAlgos,
+                suggestedParams: await appClient.algorand.client.algod.getTransactionParams().do(),
+              }),
+              signer: transactionSigner,
+            },
+          },
+          extraFee: algokit.algos(0.001),
+          accountReferences: [appAddress],
+          assetReferences: [BigInt(order.takingAsset.assetId)],
+          sender: activeAccount.address,
+          signer: transactionSigner,
+        });
+      }
+      const isReceiverOptedToGiveAsset =
+        order.givingAsset.assetId == 0 ? true : await isOptedInToAsset(activeAccount.address, order.givingAsset.assetId);
+      if (!isReceiverOptedToGiveAsset) {
+        composer.addTransaction(
+          algosdk.makeAssetTransferTxnWithSuggestedParamsFromObject({
+            from: activeAccount.address,
+            to: activeAccount.address,
+            assetIndex: order.givingAsset.assetId,
+            amount: 0,
+            suggestedParams: await appClient.algorand.client.algod.getTransactionParams().do(),
+          }),
+          transactionSigner
+        );
+      }
+      composer.claimOrder({
+        args: { orderId: Number(order.id), assetSendTxn: { txn: assetSendTxn, signer: transactionSigner } },
+        boxReferences: [{ appId: 0n, name: algosdk.bigIntToBytes(Number(order.id), 8) }],
+        assetReferences: [BigInt(order.takingAsset.assetId), BigInt(order.givingAsset.assetId)],
+        accountReferences: [appAddress, order.owner],
+        sender: activeAccount.address,
+        signer: transactionSigner,
+        extraFee: algokit.algos(extraFees),
+      });
+      const res = await composer.send();
+      console.log(res);
+      toast.success("Order Claimed Successfully");
+      let finalAssets = await getUserAssets(activeAccount.address);
+      await getOrders(finalAssets);
+    } catch (err: any) {
+      console.error(err);
+      toast.error(`Error Claiming Order: ${err.message}`);
+    } finally {
+      button.disabled = false;
+      button.textContent = "Claim Order";
+    }
+  };
+
+  const handleClaimFunds = async (e: React.MouseEvent<HTMLButtonElement>, order: LimitOrder) => {
+    console.log("Claiming funds for order:", order);
+    if (!activeAccount) {
+      toast.error("Please connect your wallet to cancel the order");
+      return;
+    }
+    const button = e.currentTarget;
+    button.disabled = true;
+    button.textContent = "Claming...";
+    try {
+      const appClient = new LimitOrderClient({ appId: BigInt(appId), algorand: algokit.AlgorandClient.testNet() });
+      const isTakingAssetOptedIn =
+        order.takingAsset.assetId === 0 ? true : await isOptedInToAsset(order.owner, Number(order.takingAsset.assetId));
+      const composer = appClient.newGroup();
+      if (!isTakingAssetOptedIn) {
+        composer.addTransaction(
+          algosdk.makeAssetTransferTxnWithSuggestedParamsFromObject({
+            from: activeAccount.address,
+            to: activeAccount.address,
+            assetIndex: order.takingAsset.assetId,
+            amount: 0,
+            suggestedParams: await appClient.algorand.client.algod.getTransactionParams().do(),
+          }),
+          transactionSigner
+        );
+      }
+      composer.claimOwnerAsset({
+        args: { orderId: Number(order.id) },
+        boxReferences: [{ appId: 0n, name: algosdk.bigIntToBytes(Number(order.id), 8) }],
+        assetReferences: [BigInt(order.takingAsset.assetId), BigInt(order.givingAsset.assetId)],
+        accountReferences: [appAddress, order.owner],
+        sender: activeAccount.address,
+        signer: transactionSigner,
+        extraFee: algokit.algos(0.001),
+      });
+      const res = await composer.send();
+      console.log(res);
+      toast.success("Funds Claimed Successfully");
+      let finalAssets = await getUserAssets(activeAccount.address);
+      await getOrders(finalAssets);
+    } catch (err: any) {
+      console.error(err);
+      toast.error(`Error Claiming Funds: ${err.message}`);
+    } finally {
+      button.disabled = false;
+      button.textContent = "Claim Funds";
+    }
+  };
+
+  const handleCancelOrder = async (e: React.MouseEvent<HTMLButtonElement>, orderId: LimitOrder) => {
+    console.log("Cancelling order:", orderId);
+    if (!activeAccount) {
+      toast.error("Please connect your wallet to cancel the order");
+      return;
+    }
+    const button = e.currentTarget;
+    button.disabled = true;
+    button.textContent = "Cancelling...";
+    try {
+      const appClient = new LimitOrderClient({ appId: BigInt(appId), algorand: algokit.AlgorandClient.testNet() });
+      const res = await appClient.send.cancelOrder({
+        args: { orderId: Number(orderId.id) },
+        boxReferences: [{ appId: 0n, name: algosdk.bigIntToBytes(Number(orderId.id), 8) }],
+        assetReferences: [BigInt(orderId.takingAsset.assetId), BigInt(orderId.givingAsset.assetId)],
+        sender: activeAccount.address,
+        signer: transactionSigner,
+        extraFee: algokit.algos(0.002),
+      });
+      console.log(res);
+      toast.success("Order Cancelled Successfully");
+      let finalAssets = await getUserAssets(activeAccount.address);
+      await getOrders(finalAssets);
+    } catch (err: any) {
+      console.log(err);
+      toast.error(`Error Cancelling Order: ${err.message}`);
+    } finally {
+      button.disabled = false;
+      button.textContent = "Cancel Order";
+    }
+  };
+
   return (
-    <div className="min-h-screen bg-[#1a1b1f] flex items-center justify-center p-4">
-      <div className="w-full max-w-md">
+    <div className="min-h-screen bg-[#1a1b1f] p-4">
+      <div className="max-w-7xl mx-auto">
         {/* Header */}
         <Header />
 
         {/* Create Order Card */}
-        <CreateOrder assets={userAssets} message={createOrderMessage} />
+        <div className="flex flex-col lg:flex-row gap-4">
+          <CreateOrder
+            createCallback={async () => {
+              const finalAssets = activeAccount ? await getUserAssets(activeAccount.address) : [];
+              await getOrders(finalAssets);
+            }}
+            assets={userAssets}
+            message={createOrderMessage}
+          />
+
+          {/* Orders Section */}
+          <div className="flex-1">
+            <div className="bg-[#2c2d33] rounded-2xl p-4 h-full">
+              <div className="flex justify-between items-center mb-4">
+                <h2 className="text-xl font-bold text-white">Order Book</h2>
+                <button
+                  onClick={() => setShowMyOrders(!showMyOrders)}
+                  className="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-[#1a1b1f] hover:bg-[#3a3b41] transition-colors text-gray-400"
+                >
+                  <ListFilter className="w-4 h-4" />
+                  <span>{showMyOrders ? "My Orders" : "All Orders"}</span>
+                </button>
+              </div>
+
+              <div className="overflow-x-auto">
+                <table className="w-full">
+                  <thead>
+                    <tr className="text-gray-400 text-sm border-b border-[#1a1b1f]">
+                      <th className="text-left py-2">Given</th>
+                      <th className="text-left py-2">To Give</th>
+                      <th className="text-right py-2">Status</th>
+                      <th className="text-right py-2">Action</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {filteredOrders.map((order) => (
+                      <tr key={Number(order.id)} className="border-b border-[#1a1b1f] last:border-0">
+                        <td className="py-3">
+                          <div className="text-white">
+                            {Number(order.givingAmount) / 10 ** order.givingAsset.decimals} {order.givingAsset.unitName}
+                          </div>
+                          <div className="text-gray-400 text-sm">
+                            {order.givingAsset.name} - {order.givingAsset.assetId}
+                          </div>
+                        </td>
+                        <td className="py-3">
+                          <div className="text-white">
+                            {Number(order.takingAmount) / 10 ** order.takingAsset.decimals} {order.takingAsset.unitName}
+                          </div>
+                          <div className="text-gray-400 text-sm">
+                            {order.takingAsset.name} - {order.takingAsset.assetId}
+                          </div>
+                        </td>
+                        <td className="text-right py-3">
+                          <span
+                            className={`inline-flex px-2 py-1 rounded text-xs ${
+                              order.completed ? "bg-green-500/10 text-green-500" : "bg-blue-500/10 text-blue-500"
+                            }`}
+                          >
+                            {order.completed ? "Completed" : "Active"}
+                          </span>
+                        </td>
+                        <td className="text-right py-3">
+                          {order.isOwner && !order.ownerClaimed && order.completed && (
+                            <button
+                              onClick={(e) => handleClaimFunds(e, order)}
+                              className="px-3 py-1.5 rounded-lg bg-green-500 hover:bg-green-600 text-white text-sm transition-colors"
+                            >
+                              Claim Funds
+                            </button>
+                          )}
+                          {!order.isOwner && !order.completed && order.canAbleToBuy && (
+                            <button
+                              onClick={(e) => handleClaimOrder(e, order)}
+                              className="px-3 py-1.5 rounded-lg bg-blue-500 hover:bg-blue-600 text-white text-sm transition-colors"
+                            >
+                              Claim Order
+                            </button>
+                          )}
+                          {order.isOwner && !order.completed && (
+                            <button
+                              onClick={(e) => handleCancelOrder(e, order)}
+                              className="px-3 py-1.5 rounded-lg bg-red-500 hover:bg-red-600 text-white text-sm transition-colors"
+                            >
+                              Cancel Order
+                            </button>
+                          )}
+                        </td>
+                      </tr>
+                    ))}
+                    {loadingOrdersMessage && (
+                      <tr>
+                        <td colSpan={4} className="text-center text-gray-400 py-4">
+                          {loadingOrdersMessage}
+                        </td>
+                      </tr>
+                    )}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

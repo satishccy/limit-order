@@ -39,16 +39,27 @@ export const getAssetDetails = async (asset: AssetHolding): Promise<AssetDetails
 };
 
 export const getAccountAlgo = async (address: string): Promise<AssetDetails> => {
-  const indexer = new Indexer(indexerToken, indexerUrl, indexerPort);
-  const accountInfo = await indexer.lookupAccountByID(address).do();
-  return {
-    assetId: 0,
-    amount: (accountInfo.account["amount-without-pending-rewards"] - accountInfo.account["min-balance"]) / 10 ** 6,
-    orgAmount: accountInfo.account["amount-without-pending-rewards"] - accountInfo.account["min-balance"],
-    decimals: 6,
-    name: "Algorand",
-    unitName: "ALGO",
-  };
+  try {
+    const indexer = new Indexer(indexerToken, indexerUrl, indexerPort);
+    const accountInfo = await indexer.lookupAccountByID(address).do();
+    return {
+      assetId: 0,
+      amount: (accountInfo.account["amount-without-pending-rewards"] - accountInfo.account["min-balance"]) / 10 ** 6,
+      orgAmount: accountInfo.account["amount-without-pending-rewards"] - accountInfo.account["min-balance"],
+      decimals: 6,
+      name: "Algorand",
+      unitName: "ALGO",
+    };
+  } catch (e) {
+    return {
+      assetId: 0,
+      amount: 0,
+      orgAmount: 0,
+      decimals: 6,
+      name: "Algorand",
+      unitName: "ALGO",
+    };
+  }
 };
 
 export const stringToBase64 = (input: string): string => {
@@ -62,4 +73,11 @@ export const base64ToString = (input: string): string => {
   const bytes = Uint8Array.from(binary, (char) => char.charCodeAt(0));
   const decoder = new TextDecoder();
   return decoder.decode(bytes);
+};
+
+export const isOptedInToAsset = async (address: string, assetId: number): Promise<boolean> => {
+  const indexer = new Indexer(indexerToken, indexerUrl, indexerPort);
+  const accountInfo = await indexer.lookupAccountAssets(address).assetId(assetId).do();
+  console.log(accountInfo);
+  return accountInfo.assets.length > 0;
 };

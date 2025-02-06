@@ -23,10 +23,12 @@ export class LimitOrder extends Contract {
   }
 
   createOrder(assetSendTxn: Txn, mbrTxn: PayTxn, takingAsset: uint64, takingAmount: uint64): uint64 {
-    assert(this.txn.sender.isOptedInToAsset(takingAsset), 'Taking asset is not opted in');
+    if (takingAsset !== 0) {
+      assert(this.txn.sender.isOptedInToAsset(takingAsset), 'Taking asset is not opted in');
+    }
     assert(assetSendTxn.sender === this.txn.sender, 'Invalid sender');
     const order = this.buildOrder(assetSendTxn, takingAsset, takingAmount);
-    verifyPayTxn(mbrTxn, { amount: { greaterThanEqualTo: BOX_MBR } });
+    verifyPayTxn(mbrTxn, { amount: { greaterThanEqualTo: BOX_MBR }, receiver: this.app.address });
     this.orders(this.orderIndex.value).value = order;
     this.orderIndex.value += 1;
     return order.id;
@@ -79,21 +81,31 @@ export class LimitOrder extends Contract {
     } else {
       assert(order.takingAsset === assetSendTxn.xferAsset.id, 'Invalid giving asset');
       assert(order.takingAmount === assetSendTxn.assetAmount, 'Invalid giving amount');
-      assert(this.txn.sender === assetSendTxn.assetSender, 'Invalid sender');
+      assert(this.txn.sender === assetSendTxn.sender, 'Invalid sender');
       assert(this.app.address === assetSendTxn.assetReceiver, 'Invalid receiver');
     }
-    this.orders(orderId).value.completed = true;
+    let ownerClaimed = false;
     this.send(order.givingAsset, order.givingAmount, this.txn.sender);
     if (order.takingAsset !== 0) {
       const asset = AssetID.fromUint64(order.takingAsset);
       if (order.owner.isOptedInToAsset(asset)) {
-        this.orders(orderId).value.ownerClaimed = true;
+        ownerClaimed = true;
         this.send(order.takingAsset, order.takingAmount, order.owner);
       }
     } else {
-      this.orders(orderId).value.ownerClaimed = true;
+      ownerClaimed = true;
       this.send(order.takingAsset, order.takingAmount, order.owner);
     }
+    this.orders(orderId).value = {
+      id: order.id,
+      owner: order.owner,
+      givingAsset: order.givingAsset,
+      takingAsset: order.takingAsset,
+      givingAmount: order.givingAmount,
+      takingAmount: order.takingAmount,
+      completed: true,
+      ownerClaimed: ownerClaimed,
+    };
   }
 
   claimOwnerAsset(orderId: uint64): void {
@@ -117,18 +129,20 @@ export class LimitOrder extends Contract {
 
   optInToAsset(assetId: AssetID, mbrTxn: PayTxn): void {
     assert(!this.app.address.isOptedInToAsset(assetId), 'Already opted in');
-    verifyPayTxn(mbrTxn, { amount: { greaterThanEqualTo: globals.assetOptInMinBalance } });
+    verifyPayTxn(mbrTxn, { amount: { greaterThanEqualTo: globals.assetOptInMinBalance }, receiver: this.app.address });
     sendAssetTransfer({ xferAsset: assetId, assetReceiver: this.app.address, assetAmount: 0 });
   }
 
   cancelOrder(orderId: uint64): void {
     assert(this.orders(orderId).exists, 'Order not found');
-    const order = this.orders(orderId).value;
-    assert(order.owner === this.txn.sender, 'Invalid sender');
-    assert(!order.completed, 'Order already completed');
+    assert(this.orders(orderId).value.owner === this.txn.sender, 'Invalid sender');
+    assert(!this.orders(orderId).value.completed, 'Order already completed');
+    const asset = this.orders(orderId).value.givingAsset;
+    const amount = this.orders(orderId).value.givingAmount;
+    const owner = this.orders(orderId).value.owner;
     this.orders(orderId).delete();
-    this.send(order.givingAsset, order.givingAmount, this.txn.sender);
-    sendPayment({ receiver: order.owner, amount: BOX_MBR });
+    this.send(asset, amount, this.txn.sender);
+    sendPayment({ receiver: owner, amount: BOX_MBR });
   }
 
   private send(asset: uint64, amount: uint64, receiver: Address): void {
